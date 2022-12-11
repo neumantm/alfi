@@ -171,7 +171,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="kgFCN7YrOQ" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="kgFCN7YrOR" role="2JcizS">
         <ref role="398BVh" node="kgFCN7YrOP" resolve="mps_home" />
       </node>
@@ -205,7 +205,7 @@
         <ref role="m$f5T" node="kgFCN7YrP5" resolve="alfi" />
       </node>
       <node concept="m$_yC" id="kgFCN7YrPc" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="kgFCN7YrPd" role="m_cZH">
         <node concept="3Mxwew" id="kgFCN7YrPe" role="3MwsjC">
