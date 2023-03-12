@@ -466,11 +466,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="vp5VMdNuua" role="3bR37C">
-          <node concept="3bR9La" id="vp5VMdNuub" role="1SiIV1">
-            <ref role="3bR37D" node="vp5VMdNtE8" resolve="alfi.StandardModelLibrary" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2e1rFG9npmC" role="1hWBAP">

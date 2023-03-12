@@ -295,9 +295,7 @@
     <mkdir dir="${build.tmp}/default/alfi.sandbox.jar/META-INF" />
     <echoxml file="${build.tmp}/default/alfi.sandbox.jar/META-INF/module.xml">
       <module namespace="alfi.sandbox" type="solution" uuid="883d45ce-b0f1-43ed-b175-dd48dfaab05b">
-        <dependencies>
-          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
-        </dependencies>
+        <dependencies />
         <uses>
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
         </uses>
@@ -673,7 +671,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.alfi.sandbox" depends="java.compile.alfi.StandardModelLibrary">
+  <target name="java.compile.alfi.sandbox">
     <mkdir dir="${project_home}/languages/alfi/sandbox/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.sandbox" />
     <javac destdir="${build.tmp}/java/out/alfi.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -681,7 +679,7 @@
       <src>
         <path location="${project_home}/languages/alfi/sandbox/source_gen" />
       </src>
-      <classpath path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+      <classpath />
     </javac>
   </target>
   

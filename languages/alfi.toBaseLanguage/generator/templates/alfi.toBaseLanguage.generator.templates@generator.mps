@@ -5844,7 +5844,7 @@
                       <node concept="3clFbF" id="4TIfAhWnB6W" role="3cqZAp">
                         <node concept="3cpWs3" id="4TIfAhWnBUQ" role="3clFbG">
                           <node concept="37vLTw" id="1rX39j7eWJc" role="3uHU7w">
-                            <ref role="3cqZAo" node="1rX39j7eWJ6" resolve="string" />
+                            <ref role="3cqZAo" node="1rX39j7eWJ6" resolve="localName" />
                           </node>
                           <node concept="v3LJS" id="4TIfAhWnB6V" role="3uHU7B">
                             <ref role="v3LJV" node="4TIfAhWnqIp" resolve="variableNamePrefix" />
