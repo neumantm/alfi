@@ -26,7 +26,7 @@ task mpsBuild {
     group 'mps'
     dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary'
 }
-mpsAntBuild.dependsOn packageStandardModelLibrary
+mpsAntBuild.dependsOn mpsAntGenerate
 mpsAntGenerate.dependsOn packageStandardModelLibrary
 
 
