@@ -265,6 +265,7 @@
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
         </dependencies>
         <uses />
+        <library jar="../../StandardModelLibrary.jar" />
         <classpath>
           <entry path="." />
         </classpath>
@@ -273,8 +274,6 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/alfi.zip1/alfi/languages/alfi/alfi.StandardModelLibrary.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/alfi.StandardModelLibrary" />
-      <fileset dir="${basedir}/solutions/alfi.StandardModelLibrary/src" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${project_home}/solutions/alfi.StandardModelLibrary/src" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${project_home}/solutions/alfi.StandardModelLibrary/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/alfi.StandardModelLibrary.jar" />
     </jar>
@@ -282,19 +281,7 @@
       <fileset dir="${project_home}/solutions/alfi.StandardModelLibrary/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/alfi.zip1/alfi/languages/alfi/alfi.StandardModelLibrary-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/alfi.StandardModelLibrary/src">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
       <fileset dir="${project_home}/solutions/alfi.StandardModelLibrary/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <fileset dir="${project_home}/solutions/alfi.StandardModelLibrary/src">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
@@ -475,6 +462,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-alfi-sandbox-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/alfi.zip">
+      <zipfileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" prefix="alfi" />
       <fileset dir="${build.tmp}/default/alfi.zip1" />
     </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
@@ -1526,18 +1514,16 @@
   </target>
   
   <target name="java.compile.alfi.StandardModelLibrary">
-    <mkdir dir="${basedir}/solutions/alfi.StandardModelLibrary/src" />
-    <mkdir dir="${project_home}/solutions/alfi.StandardModelLibrary/src" />
     <mkdir dir="${project_home}/solutions/alfi.StandardModelLibrary/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.StandardModelLibrary" />
     <javac destdir="${build.tmp}/java/out/alfi.StandardModelLibrary" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/solutions/alfi.StandardModelLibrary/src" />
-        <path location="${project_home}/solutions/alfi.StandardModelLibrary/src" />
         <path location="${project_home}/solutions/alfi.StandardModelLibrary/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
+      </classpath>
     </javac>
   </target>
   
@@ -1579,6 +1565,7 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
@@ -1638,6 +1625,7 @@
         <pathelement path="${build.tmp}/java/out/alfi" />
         <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
