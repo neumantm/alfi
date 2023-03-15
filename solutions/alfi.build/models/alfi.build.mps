@@ -106,6 +106,9 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -218,6 +221,27 @@
       </node>
     </node>
     <node concept="1l3spV" id="kgFCN7YrPj" role="1l3spN">
+      <node concept="m$_wl" id="QrDUy_Pwz2" role="39821P">
+        <ref role="m_rDy" node="QrDUy_PgKk" resolve="alfiSandboxes" />
+        <node concept="28jJK3" id="QrDUy_PMMP" role="39821P">
+          <node concept="398BVA" id="QrDUy_PMMQ" role="28jJRO">
+            <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+            <node concept="2Ry0Ak" id="QrDUy_PMMR" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="QrDUy_PMMS" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.StandardModelLibrary" />
+                <node concept="2Ry0Ak" id="QrDUy_PMMT" role="2Ry0An">
+                  <property role="2Ry0Am" value="libs" />
+                  <node concept="2Ry0Ak" id="QrDUy_PMMU" role="2Ry0An">
+                    <property role="2Ry0Am" value="StandardModelLibrary.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pUk6x" id="QrDUy_PwzT" role="pUk7w" />
+      </node>
       <node concept="3981dG" id="kgFCN7YrPk" role="39821P">
         <node concept="3_J27D" id="kgFCN7YrPl" role="Nbhlr">
           <node concept="3Mxwew" id="kgFCN7YrPm" role="3MwsjC">
@@ -275,6 +299,33 @@
         <node concept="3o6iSG" id="kgFCN7YrPg" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
+      </node>
+    </node>
+    <node concept="m$_wf" id="QrDUy_PgKk" role="3989C9">
+      <property role="m$_wk" value="alfiSandboxes" />
+      <node concept="m$_yB" id="QrDUy_Ph2H" role="m$_yh">
+        <ref role="m$_yA" node="VYVB7HpxIb" resolve="GenPlan" />
+      </node>
+      <node concept="m$f5U" id="QrDUy_PgUS" role="m$_yh">
+        <ref role="m$f5T" node="QrDUy_OJPs" resolve="alfiSandboxes" />
+      </node>
+      <node concept="3_J27D" id="QrDUy_PgKm" role="m$_yQ">
+        <node concept="3Mxwew" id="QrDUy_PgSj" role="3MwsjC">
+          <property role="3MwjfP" value="alfiSandboxes" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="QrDUy_PgKo" role="m_cZH">
+        <node concept="3Mxwew" id="QrDUy_PgSs" role="3MwsjC">
+          <property role="3MwjfP" value="alfiSandboxes" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="QrDUy_PgKq" role="m$_w8">
+        <node concept="3Mxwew" id="QrDUy_PgTu" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
+        </node>
+      </node>
+      <node concept="m$_yC" id="QrDUy_PgVv" role="m$_yJ">
+        <ref role="m$_y1" node="kgFCN7YrP6" resolve="alfi" />
       </node>
     </node>
     <node concept="2G$12M" id="VYVB7HpxB$" role="3989C9">
@@ -1278,6 +1329,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2G$12M" id="QrDUy_OJPs" role="3989C9">
+      <property role="TrG5h" value="alfiSandboxes" />
       <node concept="1E1JtA" id="kgFCN7YrP4" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="alfi.sandbox" />
@@ -1317,6 +1371,54 @@
               </node>
             </node>
             <node concept="3qWCbU" id="2e1rFG9nppf" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="QrDUy_OJW8" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="alfi.sandbox2" />
+        <property role="3LESm3" value="e96e47f4-adc2-4b0f-9360-f35f4d77e24e" />
+        <node concept="55IIr" id="QrDUy_OJW9" role="3LF7KH">
+          <node concept="2Ry0Ak" id="QrDUy_OKlw" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="QrDUy_OKml" role="2Ry0An">
+              <property role="2Ry0Am" value="alfi.sandbox2" />
+              <node concept="2Ry0Ak" id="QrDUy_OKmS" role="2Ry0An">
+                <property role="2Ry0Am" value="alfi.sandbox2.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QrDUy_OKrV" role="3bR37C">
+          <node concept="3bR9La" id="QrDUy_OKrW" role="1SiIV1">
+            <ref role="3bR37D" node="kyG04cVZep" resolve="alfi.StandardModelLibrary" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="QrDUy_OKrX" role="3bR37C">
+          <node concept="3bR9La" id="QrDUy_OKrY" role="1SiIV1">
+            <ref role="3bR37D" node="VYVB7HpxIb" resolve="GenPlan" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="QrDUy_OKsb" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="QrDUy_OKsc" role="1HemKq">
+            <node concept="398BVA" id="QrDUy_OKrZ" role="3LXTmr">
+              <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+              <node concept="2Ry0Ak" id="QrDUy_OKs0" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="QrDUy_OKs1" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.sandbox2" />
+                  <node concept="2Ry0Ak" id="QrDUy_OKs2" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="QrDUy_OKsd" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
