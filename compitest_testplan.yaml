@@ -1,0 +1,15 @@
+---
+name: MainTestplan
+children:
+  - name: sandboxes
+    path: alfiSandboxes/languages/alfiSandboxes/
+    testSuites:
+      - name: alfi.sandbox2
+        executors:
+          - AlfiJava
+          - AlfiAlf
+        tests:
+          - name: Hello
+            context: sandbox
+            input:
+              - good
