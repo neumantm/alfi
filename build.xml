@@ -189,6 +189,46 @@
       <zipfileset file="${basedir}/solutions/alfi.sandbox2/alfi.sandbox2.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-alfi.sandbox2-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/basic.language.toAlfiSandbox.jar" />
+    <mkdir dir="${build.tmp}/default/basic.language.toAlfiSandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/basic.language.toAlfiSandbox.jar/META-INF/module.xml">
+      <module namespace="basic.language.toAlfiSandbox" type="solution" uuid="c46509f2-5832-4c10-b740-32942b950f83">
+        <dependencies>
+          <module ref="76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)" kind="cl" />
+          <module ref="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" kind="cl" />
+          <module ref="e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)" kind="cl" />
+          <module ref="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:3efc97ff-fb97-4546-91b8-c87fbfedfd60:basic.language" />
+          <language id="l:5c45fcc5-be5a-4e1a-9d0a-f9d1859d878e:basic.language.dumpScope" />
+          <language id="l:7b7f9df1-ae16-4fac-9779-bf143780e13a:basic.language.generalToString" />
+          <language id="l:92de1c23-d913-4aa4-a196-a4ae01ec2e8b:basic.language.io" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="basic.language.toAlfiSandbox-src.jar" descriptor="basic.language.toAlfiSandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/alfiSandboxes/languages/alfiSandboxes/basic.language.toAlfiSandbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/basic.language.toAlfiSandbox" />
+      <fileset dir="${project_home}/solutions/basic.language.toAlfiSandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/basic.language.toAlfiSandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-basic.language.toAlfiSandbox-models">
+      <fileset dir="${project_home}/solutions/basic.language.toAlfiSandbox/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/alfiSandboxes/languages/alfiSandboxes/basic.language.toAlfiSandbox-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/solutions/basic.language.toAlfiSandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/basic.language.toAlfiSandbox/basic.language.toAlfiSandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-basic.language.toAlfiSandbox-models" prefix="module/models" />
+    </jar>
     <copy todir="${build.layout}/alfiSandboxes">
       <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
     </copy>
@@ -714,7 +754,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.GenPlan, java.compile.basic.language, java.compile.basic.language#01, java.compile.basic.language.io, java.compile.basic.language.io.generator, java.compile.basic.language.generalToString, java.compile.basic.language.generalToString.generator, java.compile.basic.language.dumpScope, java.compile.basic.language.dumpScope.generator, java.compile.basic.language.toAlfi, java.compile.basic.language.toAlfi.generator, java.compile.basic.language.io.toAlfi, java.compile.basic.language.io.toAlfi.generator, java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.test, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toBaseLanguage, java.compile.alfi.toBaseLanguage.generator, java.compile.alfi.sandbox, java.compile.alfi.sandbox2, java.compile.alfi.compitest" />
+  <target name="compileJava" depends="java.compile.GenPlan, java.compile.basic.language, java.compile.basic.language#01, java.compile.basic.language.io, java.compile.basic.language.io.generator, java.compile.basic.language.generalToString, java.compile.basic.language.generalToString.generator, java.compile.basic.language.dumpScope, java.compile.basic.language.dumpScope.generator, java.compile.basic.language.toAlfi, java.compile.basic.language.toAlfi.generator, java.compile.basic.language.io.toAlfi, java.compile.basic.language.io.toAlfi.generator, java.compile.alfi, java.compile.alfi.generator, java.compile.alfi.test, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toBaseLanguage, java.compile.alfi.toBaseLanguage.generator, java.compile.alfi.sandbox, java.compile.alfi.sandbox2, java.compile.basic.language.toAlfiSandbox, java.compile.alfi.compitest" />
   
   <target name="processResources" />
   
@@ -871,6 +911,7 @@
         <module file="${basedir}/solutions/alfi.compitest/alfi.compitest.msd" />
         <module file="${basedir}/languages/alfi/sandbox/alfi.sandbox.msd" />
         <module file="${basedir}/solutions/alfi.sandbox2/alfi.sandbox2.msd" />
+        <module file="${basedir}/solutions/basic.language.toAlfiSandbox/basic.language.toAlfiSandbox.msd" />
       </chunk>
       <jvmargs>
         <arg value="-ea" />
@@ -1369,7 +1410,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.basic.language.toAlfi" depends="java.compile.alfi, java.compile.basic.language, fetchDependencies">
+  <target name="java.compile.basic.language.toAlfi" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.basic.language, fetchDependencies">
     <mkdir dir="${project_home}/languages/basic.language.toAlfi/source_gen" />
     <mkdir dir="${build.tmp}/java/out/basic.language.toAlfi" />
     <javac destdir="${build.tmp}/java/out/basic.language.toAlfi" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1406,7 +1447,9 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/basic.language" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
@@ -1422,7 +1465,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.basic.language.toAlfi.generator" depends="java.compile.alfi, java.compile.basic.language, java.compile.basic.language.toAlfi, fetchDependencies">
+  <target name="java.compile.basic.language.toAlfi.generator" depends="java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.toAlfi, fetchDependencies">
     <mkdir dir="${project_home}/languages/basic.language.toAlfi/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/basic.language.toAlfi.generator" />
     <javac destdir="${build.tmp}/java/out/basic.language.toAlfi.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1459,8 +1502,10 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <pathelement path="${build.tmp}/java/out/basic.language" />
         <pathelement path="${build.tmp}/java/out/basic.language.toAlfi" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
@@ -1474,7 +1519,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.basic.language.io.toAlfi" depends="java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
+  <target name="java.compile.basic.language.io.toAlfi" depends="java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, fetchDependencies">
     <mkdir dir="${project_home}/languages/basic.language.io.toAlfi/source_gen" />
     <mkdir dir="${build.tmp}/java/out/basic.language.io.toAlfi" />
     <javac destdir="${build.tmp}/java/out/basic.language.io.toAlfi" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1483,6 +1528,7 @@
         <path location="${project_home}/languages/basic.language.io.toAlfi/source_gen" />
       </src>
       <classpath>
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1514,6 +1560,7 @@
         <pathelement path="${build.tmp}/java/out/basic.language.dumpScope" />
         <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
         <pathelement path="${build.tmp}/java/out/basic.language.io" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
@@ -1529,7 +1576,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.basic.language.io.toAlfi.generator" depends="java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, java.compile.basic.language.io.toAlfi, fetchDependencies">
+  <target name="java.compile.basic.language.io.toAlfi.generator" depends="java.compile.alfi.StandardModelLibrary, java.compile.basic.language, java.compile.basic.language.dumpScope, java.compile.basic.language.generalToString, java.compile.basic.language.io, java.compile.basic.language.io.toAlfi, fetchDependencies">
     <mkdir dir="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/basic.language.io.toAlfi.generator" />
     <javac destdir="${build.tmp}/java/out/basic.language.io.toAlfi.generator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1538,6 +1585,7 @@
         <path location="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
       </src>
       <classpath>
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
         <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
@@ -1570,6 +1618,7 @@
         <pathelement path="${build.tmp}/java/out/basic.language.generalToString" />
         <pathelement path="${build.tmp}/java/out/basic.language.io" />
         <pathelement path="${build.tmp}/java/out/basic.language.io.toAlfi" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/util.jar" />
@@ -1930,6 +1979,59 @@
     </javac>
   </target>
   
+  <target name="java.compile.basic.language.toAlfiSandbox" depends="java.compile.GenPlan, java.compile.alfi, java.compile.alfi.StandardModelLibrary, java.compile.alfi.toBaseLanguage, fetchDependencies">
+    <mkdir dir="${project_home}/solutions/basic.language.toAlfiSandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/basic.language.toAlfiSandbox" />
+    <javac destdir="${build.tmp}/java/out/basic.language.toAlfiSandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project_home}/solutions/basic.language.toAlfiSandbox/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/GenPlan" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/alfi" />
+        <pathelement path="${build.tmp}/java/out/alfi.StandardModelLibrary" />
+        <pathelement path="${build.tmp}/java/out/alfi.toBaseLanguage" />
+        <fileset file="${project_home}/solutions/alfi.StandardModelLibrary/libs/StandardModelLibrary.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party-rt.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
+        <fileset file="${artifacts.mps}/lib/eclipse.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/util/jetbrains.mps.execution.util.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.alfi.compitest" depends="java.compile.GenPlan, java.compile.alfi.StandardModelLibrary, fetchDependencies">
     <mkdir dir="${project_home}/solutions/alfi.compitest/source_gen" />
     <mkdir dir="${build.tmp}/java/out/alfi.compitest" />
@@ -2168,5 +2270,6 @@
     <delete dir="${project_home}/basic-lang/languages/basic.language.io/generator/source_gen" />
     <delete dir="${project_home}/languages/basic.language.io.toAlfi/generator/source_gen" />
     <delete dir="${project_home}/languages/basic.language.toAlfi/generator/source_gen" />
+    <delete dir="${project_home}/solutions/basic.language.toAlfiSandbox/source_gen" />
   </target>
 </project>

@@ -13,6 +13,8 @@
     <import index="j1ci" ref="r:13df48d2-9ee5-460a-bcf8-94109aeaa75a(basic.language.io.structure)" />
     <import index="m6ay" ref="r:4bf131b7-c8d7-4831-85fa-e548b53caca4(basic.language.dumpScope.structure)" />
     <import index="aswf" ref="r:43198d3e-fc8b-4472-8b3b-f65635aec5d5(basic.language.generalToString.structure)" />
+    <import index="lodc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library.primitivebehaviors(alfi.StandardModelLibrary/)" />
+    <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
