@@ -29,7 +29,7 @@
         <dependency reexport="false">92de1c23-d913-4aa4-a196-a4ae01ec2e8b(basic.language.io)</dependency>
         <dependency reexport="false">5c45fcc5-be5a-4e1a-9d0a-f9d1859d878e(basic.language.dumpScope)</dependency>
         <dependency reexport="false">7b7f9df1-ae16-4fac-9779-bf143780e13a(basic.language.generalToString)</dependency>
-        <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+        <dependency reexport="true">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" version="0" />
@@ -73,7 +73,7 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+    <dependency reexport="true">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />

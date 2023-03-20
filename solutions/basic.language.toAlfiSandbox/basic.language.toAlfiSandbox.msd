@@ -14,7 +14,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">76f7ae4d-6343-4b77-b3be-95673e578bcf(GenPlan)</dependency>
-    <dependency reexport="false">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
+    <dependency reexport="true">e9b40a72-6930-481d-bdce-a0a866bf715e(alfi.StandardModelLibrary)</dependency>
     <dependency reexport="false">bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)</dependency>
     <dependency reexport="false">d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)</dependency>
   </dependencies>
