@@ -20,3 +20,8 @@ task compitestRunTests {
       }
     }
 }
+
+task compitestClean(type: Delete) {
+  group 'compitest'
+  delete file("build/compitest")
+}
