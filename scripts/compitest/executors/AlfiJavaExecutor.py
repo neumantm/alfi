@@ -18,7 +18,10 @@ class AlfiJavaExecutor(Executor):
     def execute(self, context: str, test_case: str, input: List[str]) -> ExecutionResult:
         assert self.standardModelLibrary is not None
         assert self.testSuiteJar is not None
-        className = f"{self.test_suite_name}.{context}.Activity{test_case}"
+        packageName = f"{self.test_suite_name}"
+        if len(context) > 0:
+            packageName = f"{packageName}.{context}"
+        className = f"{packageName}.Activity{test_case}"
 
         cmd = ["java", "-cp", f"{self.standardModelLibrary}:{self.testSuiteJar}", className]
         return self.execute_cmd_and_document_with_files(test_case, input, cmd)

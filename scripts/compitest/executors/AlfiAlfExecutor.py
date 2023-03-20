@@ -20,7 +20,9 @@ class AlfiAlfExecutor(Executor):
         assert self.alf_script is not None
         assert self.test_suite_src_dir is not None
 
-        packageName = f"{self.test_suite_name}.{context}"
+        packageName = f"{self.test_suite_name}"
+        if len(context) > 0:
+            packageName = f"{packageName}.{context}"
         src_dir = os.path.join(self.test_suite_src_dir, packageName.replace(".", "/"))
 
         cmd = ["bash", self.alf_script, "-m", src_dir, test_case]
