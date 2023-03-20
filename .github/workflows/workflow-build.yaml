@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: artifactsForCompitest
-          path: build/artifacts/${{ env.PROJECT_NAME }}/alfiSandboxes/
+          path: build/artifacts/${{ env.PROJECT_NAME }}/compitest/
           retention-days: 1
 
   compitest:
@@ -83,7 +83,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifactsForCompitest
-          path: build/artifacts/${{ env.PROJECT_NAME }}/alfiSandboxes/
+          path: build/artifacts/${{ env.PROJECT_NAME }}/compitest/
 
       - name: Run compitest
         run: sh ./gradlew compitestRunTests

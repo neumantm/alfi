@@ -1,15 +1,13 @@
 ---
-name: MainTestplan
-children:
-  - name: sandboxes
-    path: alfiSandboxes/languages/alfiSandboxes/
-    testSuites:
-      - name: alfi.sandbox2
-        executors:
-          - AlfiJava
-          - AlfiAlf
-        tests:
-          - name: Hello
-            context: sandbox
-            input:
-              - good
+name: compiTestPlan
+path: compitest/languages/compitest/
+testSuites:
+  - name: alfi.compitest
+    executors:
+      - AlfiJava
+      - AlfiAlf
+    tests:
+      - name: HelloWorld
+      - name: Hello
+        input:
+          - good
