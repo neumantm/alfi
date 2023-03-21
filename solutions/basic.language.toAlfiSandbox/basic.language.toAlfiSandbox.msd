@@ -9,7 +9,7 @@
     <facet type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
-    <facet planModel="r:1ad14d33-6e32-4884-9c2f-2611975089c2(GenPlan.main@genplan)" type="generator" />
+    <facet planModel="r:1ad14d33-6e32-4884-9c2f-2611975089c2(GenPlan.basicLang.main@genplan)" type="generator" />
   </facets>
   <sourcePath />
   <dependencies>

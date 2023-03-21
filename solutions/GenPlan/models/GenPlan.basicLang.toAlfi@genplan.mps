@@ -40,6 +40,30 @@
     <property role="TrG5h" value="BasicLangToAlfi" />
     <node concept="2VgMA2" id="6pZ_RG0OKI2" role="2VgMA7">
       <property role="1s431M" value="true" />
+      <node concept="2Qf6Nf" id="4cRRn1IlMMQ" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="4cRRn1IlMN8" role="2Qf6Ng">
+          <property role="2V$B1T" value="5c45fcc5-be5a-4e1a-9d0a-f9d1859d878e" />
+          <property role="2V$B1Q" value="basic.language.dumpScope" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="1zZF6PW8gp8" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1zZF6PW8gpe" role="2Qf6Ng">
+          <property role="2V$B1T" value="7b7f9df1-ae16-4fac-9779-bf143780e13a" />
+          <property role="2V$B1Q" value="basic.language.generalToString" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="1zZF6PW8yMr" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1zZF6PW8yMv" role="2Qf6Ng">
+          <property role="2V$B1T" value="3efc97ff-fb97-4546-91b8-c87fbfedfd60" />
+          <property role="2V$B1Q" value="basic.language" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="1zZF6PW8yMx" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1zZF6PW8yMB" role="2Qf6Ng">
+          <property role="2V$B1T" value="92de1c23-d913-4aa4-a196-a4ae01ec2e8b" />
+          <property role="2V$B1Q" value="basic.language.io" />
+        </node>
+      </node>
       <node concept="2Qf6Nf" id="6pZ_RG0OKId" role="2Qf7GQ">
         <node concept="2V$Bhx" id="6pZ_RG0OKIz" role="2Qf6Ng">
           <property role="2V$B1T" value="4743bff5-cc1e-4989-b409-05b508d63afe" />
