@@ -120,6 +120,8 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -201,7 +203,6 @@
       <concept id="7024111702304501422" name="jetbrains.mps.baseLanguage.structure.LeftShiftAssignmentExpression" flags="nn" index="3vZ8re" />
       <concept id="7024111702304501424" name="jetbrains.mps.baseLanguage.structure.RightShiftAssignmentExpression" flags="nn" index="3vZ8rg" />
       <concept id="7024111702304495340" name="jetbrains.mps.baseLanguage.structure.MulAssignmentExpression" flags="nn" index="3vZbUc" />
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -4106,7 +4107,7 @@
     <node concept="3aamgX" id="5KQf2y8dOjD" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
       <node concept="gft3U" id="5KQf2y8dOjE" role="1lVwrX">
-        <node concept="3clFbC" id="5KQf2y8dSGj" role="gfFT$">
+        <node concept="17R0WA" id="3$_aWdn4sqW" role="gfFT$">
           <node concept="3cmrfG" id="5KQf2y8dOjG" role="3uHU7B">
             <property role="3cmrfH" value="1" />
             <node concept="29HgVG" id="5KQf2y8dOjH" role="lGtFl">
@@ -4172,7 +4173,7 @@
     <node concept="3aamgX" id="5KQf2y8dRjM" role="3aUrZf">
       <ref role="30HIoZ" to="28lk:6cBsaQyn5Yc" resolve="EqualityExpression" />
       <node concept="gft3U" id="5KQf2y8dRjN" role="1lVwrX">
-        <node concept="3y3z36" id="5KQf2y8dT9q" role="gfFT$">
+        <node concept="17QLQc" id="3$_aWdn4sy3" role="gfFT$">
           <node concept="3cmrfG" id="5KQf2y8dRjP" role="3uHU7B">
             <property role="3cmrfH" value="1" />
             <node concept="29HgVG" id="5KQf2y8dRjQ" role="lGtFl">

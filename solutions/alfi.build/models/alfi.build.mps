@@ -1522,6 +1522,25 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="6XYV73MUH$r" role="3bR37C">
+          <node concept="1BurEX" id="6XYV73MUH$s" role="1SiIV1">
+            <node concept="398BVA" id="6XYV73MUH$c" role="1BurEY">
+              <ref role="398BVh" node="kgFCN7YrQ7" resolve="project_home" />
+              <node concept="2Ry0Ak" id="6XYV73MUH$d" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6XYV73MUH$e" role="2Ry0An">
+                  <property role="2Ry0Am" value="alfi.StandardModelLibrary" />
+                  <node concept="2Ry0Ak" id="6XYV73MUH$f" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6XYV73MUH$g" role="2Ry0An">
+                      <property role="2Ry0Am" value="StandardModelLibrary.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="2e1rFG9npmC" role="1hWBAP">

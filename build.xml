@@ -281,6 +281,7 @@
         <uses>
           <language id="l:bf897046-1e4e-4c49-b9d6-a7ab6d3f8703:alfi" />
         </uses>
+        <library jar="../../../alfiSandboxes/StandardModelLibrary.jar" />
         <classpath>
           <entry path="." />
         </classpath>
