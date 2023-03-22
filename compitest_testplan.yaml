@@ -11,3 +11,6 @@ testSuites:
       - name: Hello
         input:
           - good
+      - name: LiteralExpressionsTest
+      - name: UnaryExpressionsTest
+      - name: BinaryExpressionsTest
