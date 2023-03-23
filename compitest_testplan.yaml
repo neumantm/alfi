@@ -14,3 +14,8 @@ testSuites:
       - name: LiteralExpressionsTest
       - name: UnaryExpressionsTest
       - name: BinaryExpressionsTest
+      - name: BreakStatementTest
+      - name: DoStatementTest
+      - name: ForStatementTest
+      - name: IfStatementTest
+      - name: WhileStatementTest
