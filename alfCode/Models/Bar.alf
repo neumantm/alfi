@@ -1,0 +1,11 @@
+package Bar {
+  public activity Baz() {
+    WriteLine("baz");
+    Bar::Asd::Xyz();
+  }
+  public package Asd {
+    public activity Xyz() {
+      WriteLine("Xyz");
+    }
+  }
+}

@@ -97,6 +97,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2SMO68r_I0M" resolve="SyntaxElement" />
     </node>
+    <node concept="PrWs8" id="6OepWIVt7NC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0GL">
     <property role="EcuMT" value="3328952194368015153" />
@@ -303,9 +306,12 @@
     <node concept="1TJgyj" id="2kuSLC0oTxi" role="1TKVEi">
       <property role="IQ2ns" value="2674824929519835218" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nameBinding" />
+      <property role="20kJfa" value="names" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="2kuSLC0oTxk" resolve="NameBinding" />
+      <ref role="20lvS9" node="7qCenb1KL$4" resolve="NameReference" />
+    </node>
+    <node concept="PrWs8" id="6OepWIVoPpF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2kuSLC0oTxk">
@@ -1281,6 +1287,18 @@
     <property role="34LRSv" value="package" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="2SMO68r$0GW" resolve="NamespaceDefinition" />
+  </node>
+  <node concept="1TIwiD" id="7qCenb1KL$4">
+    <property role="EcuMT" value="8550147057602730244" />
+    <property role="3GE5qa" value="expressions.names" />
+    <property role="TrG5h" value="NameReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7qCenb1KL$5" role="1TKVEi">
+      <property role="IQ2ns" value="8550147057602730245" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+    </node>
   </node>
 </model>
 
