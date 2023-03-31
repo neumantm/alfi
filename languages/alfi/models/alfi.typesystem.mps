@@ -39,6 +39,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -124,7 +125,17 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
+        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
+      </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -134,6 +145,9 @@
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
+      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
+        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
@@ -721,6 +735,61 @@
     <node concept="1YaCAy" id="6cBsaQyaH74" role="1YuTPh">
       <property role="TrG5h" value="realLiteralExpression" />
       <ref role="1YaFvo" to="28lk:6cBsaQxTozH" resolve="RealLiteralExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6OepWIVJQ4K">
+    <property role="TrG5h" value="check_NamespaceMember" />
+    <property role="3GE5qa" value="units" />
+    <node concept="3clFbS" id="6OepWIVJQ4L" role="18ibNy">
+      <node concept="3clFbJ" id="6OepWIVJQ4R" role="3cqZAp">
+        <node concept="1Wc70l" id="6OepWIVJQRI" role="3clFbw">
+          <node concept="17R0WA" id="6OepWIVJRXf" role="3uHU7B">
+            <node concept="2OqwBi" id="6OepWIVJS9G" role="3uHU7w">
+              <node concept="1XH99k" id="6OepWIVJRYf" role="2Oq$k0">
+                <ref role="1XH99l" to="28lk:6OepWIVA92D" resolve="Visibility" />
+              </node>
+              <node concept="2ViDtV" id="6OepWIVJSoe" role="2OqNvi">
+                <ref role="2ViDtZ" to="28lk:6OepWIVA92I" resolve="package" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6OepWIVJR9g" role="3uHU7B">
+              <node concept="1YBJjd" id="6OepWIVJQSF" role="2Oq$k0">
+                <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+              </node>
+              <node concept="3TrcHB" id="6OepWIVJRnM" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:2SMO68r$0GP" resolve="visibility" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6OepWIVJQDE" role="3uHU7w">
+            <node concept="2OqwBi" id="6OepWIVJQhK" role="2Oq$k0">
+              <node concept="1YBJjd" id="6OepWIVJQ53" role="2Oq$k0">
+                <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+              </node>
+              <node concept="1mfA1w" id="6OepWIVJQwq" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="6OepWIVJQLH" role="2OqNvi">
+              <node concept="chp4Y" id="6OepWIVJQNO" role="cj9EA">
+                <ref role="cht4Q" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6OepWIVJQ4T" role="3clFbx">
+          <node concept="2MkqsV" id="6OepWIVJSpc" role="3cqZAp">
+            <node concept="Xl_RD" id="6OepWIVJSpo" role="2MkJ7o">
+              <property role="Xl_RC" value="Visibility package is not allowed for direct members of a package" />
+            </node>
+            <node concept="1YBJjd" id="6OepWIVJSrf" role="1urrMF">
+              <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6OepWIVJQ4N" role="1YuTPh">
+      <property role="TrG5h" value="namespaceMember" />
+      <ref role="1YaFvo" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
     </node>
   </node>
 </model>
