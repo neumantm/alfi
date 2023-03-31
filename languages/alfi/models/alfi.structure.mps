@@ -127,7 +127,7 @@
     <node concept="1TJgyi" id="2SMO68r$0GP" role="1TKVEl">
       <property role="IQ2nx" value="3328952194368015157" />
       <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="6OepWIVA92D" resolve="Visibility" />
     </node>
     <node concept="1TJgyi" id="2SMO68r$0GS" role="1TKVEl">
       <property role="IQ2nx" value="3328952194368015160" />
@@ -1298,6 +1298,28 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6OepWIVA92D">
+    <property role="3F6X1D" value="7858332524531454121" />
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="Visibility" />
+    <ref role="1H5jkz" node="6OepWIVA92I" resolve="package" />
+    <node concept="25R33" id="6OepWIVA92E" role="25R1y">
+      <property role="3tVfz5" value="7858332524531454122" />
+      <property role="TrG5h" value="public" />
+    </node>
+    <node concept="25R33" id="6OepWIVA92F" role="25R1y">
+      <property role="3tVfz5" value="7858332524531454123" />
+      <property role="TrG5h" value="protected" />
+    </node>
+    <node concept="25R33" id="6OepWIVA92I" role="25R1y">
+      <property role="3tVfz5" value="7858332524531454126" />
+      <property role="TrG5h" value="package" />
+    </node>
+    <node concept="25R33" id="6OepWIVA92M" role="25R1y">
+      <property role="3tVfz5" value="7858332524531454130" />
+      <property role="TrG5h" value="private" />
     </node>
   </node>
 </model>

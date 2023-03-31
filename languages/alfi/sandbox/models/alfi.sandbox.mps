@@ -39,12 +39,16 @@
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
+      <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
+        <property id="3328952194368015157" name="visibility" index="PCHHn" />
+      </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
       </concept>
+      <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ng" index="PJ9RI">
         <child id="520354255175429050" name="documentation" index="I883a" />
       </concept>
@@ -75,6 +79,7 @@
   </registry>
   <node concept="PCHHj" id="2kuSLC0qfFq">
     <property role="TrG5h" value="Hello" />
+    <property role="PCHHn" value="6OepWIVA92E/public" />
     <node concept="PCHzy" id="2kuSLC0qfFr" role="PCHGa">
       <node concept="327OUb" id="6OepWIVtH4J" role="PCHzz">
         <property role="TrG5h" value="a" />
@@ -155,6 +160,7 @@
     <property role="TrG5h" value="Foo" />
     <node concept="PCHHj" id="7bDXsfCj65Y" role="PCHHv">
       <property role="TrG5h" value="FooA" />
+      <property role="PCHHn" value="6OepWIVA92M/private" />
       <node concept="PCHzy" id="7bDXsfCj660" role="PCHGa">
         <node concept="_jtW9" id="6OepWIV$jLi" role="PCHzz">
           <node concept="_uYbk" id="6OepWIV$jLc" role="_jtWe">
@@ -183,9 +189,6 @@
               <node concept="2RqM1Q" id="6OepWIVA8UF" role="_vnH8">
                 <ref role="2RqM1R" node="7bDXsfCj66T" resolve="xyz" />
               </node>
-              <node concept="2RqM1Q" id="6OepWIVA8UX" role="_vnH8">
-                <ref role="2RqM1R" node="7bDXsfCj674" resolve="xyz1" />
-              </node>
             </node>
           </node>
         </node>
@@ -207,8 +210,18 @@
     </node>
     <node concept="2qCqA3" id="7bDXsfCj66T" role="PCHHv">
       <property role="TrG5h" value="xyz" />
+      <node concept="2qCqA3" id="6OepWIVJOLp" role="PCHHv">
+        <property role="TrG5h" value="xyzA" />
+        <node concept="PCHHj" id="6OepWIVJOLv" role="PCHHv">
+          <property role="TrG5h" value="xyzA1" />
+        </node>
+      </node>
       <node concept="PCHHj" id="7bDXsfCj674" role="PCHHv">
         <property role="TrG5h" value="xyz1" />
+        <property role="PCHHn" value="6OepWIVA92M/private" />
+        <node concept="PCHzy" id="6OepWIVJOKR" role="PCHGa">
+          <node concept="PDbRn" id="6OepWIVJOKT" role="PCHzz" />
+        </node>
       </node>
     </node>
   </node>
