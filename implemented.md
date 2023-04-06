@@ -101,7 +101,7 @@ Limitations are listed as subpoints of the chapters.
 ## Units (10)
 
 - [x] 10.1 Overview
-  - not imports
+  - no alias for imports
   - no stereotypes
 - [x] 10.2 Namespaces
 - [x] 10.3 Packages

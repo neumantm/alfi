@@ -1406,5 +1406,91 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1KdBIfWJZUa">
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="ImportDeclaration_MakePackageImport" />
+    <ref role="2ZfgGC" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    <node concept="2S6ZIM" id="1KdBIfWJZUb" role="2ZfVej">
+      <node concept="3clFbS" id="1KdBIfWJZUc" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWJZUT" role="3cqZAp">
+          <node concept="Xl_RD" id="1KdBIfWJZUS" role="3clFbG">
+            <property role="Xl_RC" value="Make this a package import" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1KdBIfWJZUd" role="2ZfgGD">
+      <node concept="3clFbS" id="1KdBIfWJZUe" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWK0$T" role="3cqZAp">
+          <node concept="37vLTI" id="1KdBIfWK12R" role="3clFbG">
+            <node concept="3clFbT" id="1KdBIfWK17d" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="1KdBIfWK0_7" role="37vLTJ">
+              <node concept="2Sf5sV" id="1KdBIfWK0$S" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1KdBIfWK0Lh" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1KdBIfWK05A" role="2ZfVeh">
+      <node concept="3clFbS" id="1KdBIfWK05B" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWK09F" role="3cqZAp">
+          <node concept="3fqX7Q" id="1KdBIfWK0$1" role="3clFbG">
+            <node concept="2OqwBi" id="1KdBIfWK0$3" role="3fr31v">
+              <node concept="2Sf5sV" id="1KdBIfWK0$4" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1KdBIfWK0$5" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1KdBIfWK18b">
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="ImportDeclaration_MakeElementImport" />
+    <ref role="2ZfgGC" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    <node concept="2S6ZIM" id="1KdBIfWK18c" role="2ZfVej">
+      <node concept="3clFbS" id="1KdBIfWK18d" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWK1dl" role="3cqZAp">
+          <node concept="Xl_RD" id="1KdBIfWK1dk" role="3clFbG">
+            <property role="Xl_RC" value="Make this import an element import" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1KdBIfWK18e" role="2ZfgGD">
+      <node concept="3clFbS" id="1KdBIfWK18f" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWK24j" role="3cqZAp">
+          <node concept="37vLTI" id="1KdBIfWK2wP" role="3clFbG">
+            <node concept="3clFbT" id="1KdBIfWK2zx" role="37vLTx" />
+            <node concept="2OqwBi" id="1KdBIfWK24z" role="37vLTJ">
+              <node concept="2Sf5sV" id="1KdBIfWK24i" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1KdBIfWK26M" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1KdBIfWK1or" role="2ZfVeh">
+      <node concept="3clFbS" id="1KdBIfWK1os" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfWK1sw" role="3cqZAp">
+          <node concept="2OqwBi" id="1KdBIfWK1Cf" role="3clFbG">
+            <node concept="2Sf5sV" id="1KdBIfWK1sv" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1KdBIfWK21F" role="2OqNvi">
+              <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

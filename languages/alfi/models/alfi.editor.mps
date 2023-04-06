@@ -3552,6 +3552,10 @@
           <property role="3F0ifm" value="" />
         </node>
       </node>
+      <node concept="3F2HdR" id="1KdBIfWL13s" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1KdBIfWKYgZ" resolve="imports" />
+        <node concept="2iRkQZ" id="1KdBIfWL13u" role="2czzBx" />
+      </node>
       <node concept="3F1sOY" id="6OepWIVJVZn" role="3EZMnx">
         <ref role="1NtTu8" to="28lk:6OepWIVJVYY" resolve="namespaceDefinition" />
       </node>
@@ -3589,6 +3593,97 @@
               <node concept="0GJ7k" id="5Jdbbz9A_gw" role="2Oq$k0" />
               <node concept="3TrcHB" id="5Jdbbz9A_MA" role="2OqNvi">
                 <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1KdBIfWJZ1N">
+    <property role="3GE5qa" value="units" />
+    <ref role="1XX52x" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    <node concept="3EZMnI" id="1KdBIfWJZ1P" role="2wV5jI">
+      <node concept="3F0A7n" id="1KdBIfWJZ1W" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1KdBIfWJWnt" resolve="visibility" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="PMmxH" id="1KdBIfWJZ22" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      </node>
+      <node concept="3F1sOY" id="1KdBIfWJZ29" role="3EZMnx">
+        <ref role="1NtTu8" to="28lk:1KdBIfWJZ1E" resolve="referent" />
+      </node>
+      <node concept="3F0ifn" id="1KdBIfWJZ2p" role="3EZMnx">
+        <property role="3F0ifm" value="::" />
+        <ref role="1k5W1q" to="tpen:hFDnyG9" resolve="Dot" />
+        <ref role="1ERwB7" node="1KdBIfWMpQ0" resolve="ImportDeclaration_DeletePackageImport" />
+        <node concept="pkWqt" id="1KdBIfWJZ2y" role="pqm2j">
+          <node concept="3clFbS" id="1KdBIfWJZ2z" role="2VODD2">
+            <node concept="3clFbF" id="1KdBIfWJZ6Q" role="3cqZAp">
+              <node concept="2OqwBi" id="1KdBIfWJZkn" role="3clFbG">
+                <node concept="pncrf" id="1KdBIfWJZ6P" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1KdBIfWJZw3" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1KdBIfWLHAE" role="3EZMnx">
+        <property role="3F0ifm" value="*" />
+        <ref role="1ERwB7" node="1KdBIfWMpQ0" resolve="ImportDeclaration_DeletePackageImport" />
+        <node concept="pkWqt" id="1KdBIfWLHBr" role="pqm2j">
+          <node concept="3clFbS" id="1KdBIfWLHBs" role="2VODD2">
+            <node concept="3clFbF" id="1KdBIfWLHC7" role="3cqZAp">
+              <node concept="2OqwBi" id="1KdBIfWLHPC" role="3clFbG">
+                <node concept="pncrf" id="1KdBIfWLHC6" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1KdBIfWLI4p" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1KdBIfWK2FB" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="tpen:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="2iRfu4" id="1KdBIfWJZ1S" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="1KdBIfWMpQ0">
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="ImportDeclaration_DeletePackageImport" />
+    <ref role="1h_SK9" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    <node concept="1hA7zw" id="1KdBIfWMpQ1" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <property role="1hHO97" value="Delete package import (make element import)" />
+      <node concept="1hAIg9" id="1KdBIfWMpQ2" role="1hA7z_">
+        <node concept="3clFbS" id="1KdBIfWMpQ3" role="2VODD2">
+          <node concept="3clFbF" id="1KdBIfWMqsX" role="3cqZAp">
+            <node concept="37vLTI" id="1KdBIfWMr2H" role="3clFbG">
+              <node concept="3clFbT" id="1KdBIfWMr3l" role="37vLTx" />
+              <node concept="2OqwBi" id="1KdBIfWMq$P" role="37vLTJ">
+                <node concept="0IXxy" id="1KdBIfWMqsW" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1KdBIfWMqJI" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="jK8Ss" id="1KdBIfWMpTr" role="jK8aL">
+        <node concept="3clFbS" id="1KdBIfWMpTs" role="2VODD2">
+          <node concept="3clFbF" id="1KdBIfWMpXJ" role="3cqZAp">
+            <node concept="2OqwBi" id="1KdBIfWMqbg" role="3clFbG">
+              <node concept="0IXxy" id="1KdBIfWMpXI" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1KdBIfWMqmp" role="2OqNvi">
+                <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
               </node>
             </node>
           </node>

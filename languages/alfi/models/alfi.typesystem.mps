@@ -1367,5 +1367,132 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="1KdBIfWOXS2">
+    <property role="TrG5h" value="check_ImportDeclaration" />
+    <property role="3GE5qa" value="units" />
+    <node concept="3clFbS" id="1KdBIfWOXS3" role="18ibNy">
+      <node concept="3cpWs8" id="1KdBIfWOXS9" role="3cqZAp">
+        <node concept="3cpWsn" id="1KdBIfWOXSa" role="3cpWs9">
+          <property role="TrG5h" value="target" />
+          <node concept="3Tqbb2" id="1KdBIfWOXSb" role="1tU5fm">
+            <ref role="ehGHo" to="28lk:6ldY1Si$Wi5" resolve="AlfNamedConcept" />
+          </node>
+          <node concept="2OqwBi" id="1KdBIfWOXSc" role="33vP2m">
+            <node concept="2OqwBi" id="1KdBIfWOYFl" role="2Oq$k0">
+              <node concept="1YBJjd" id="1KdBIfWOXSe" role="2Oq$k0">
+                <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+              </node>
+              <node concept="3TrEf2" id="1KdBIfWOYHF" role="2OqNvi">
+                <ref role="3Tt5mk" to="28lk:1KdBIfWJZ1E" resolve="referent" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1KdBIfWOXSg" role="2OqNvi">
+              <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1KdBIfWOXSh" role="3cqZAp">
+        <node concept="17R0WA" id="1KdBIfWOXSi" role="3clFbw">
+          <node concept="2OqwBi" id="1KdBIfWOXSj" role="3uHU7w">
+            <node concept="1YBJjd" id="1KdBIfWOXSk" role="2Oq$k0">
+              <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+            </node>
+            <node concept="2Xjw5R" id="1KdBIfWOXSl" role="2OqNvi">
+              <node concept="1xMEDy" id="1KdBIfWOXSm" role="1xVPHs">
+                <node concept="chp4Y" id="1KdBIfWOXSn" role="ri$Ld">
+                  <ref role="cht4Q" to="28lk:6OepWIVJVYV" resolve="Unit" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1KdBIfWOXSo" role="3uHU7B">
+            <node concept="37vLTw" id="1KdBIfWOXSp" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KdBIfWOXSa" resolve="target" />
+            </node>
+            <node concept="2Xjw5R" id="1KdBIfWOXSq" role="2OqNvi">
+              <node concept="1xMEDy" id="1KdBIfWOXSr" role="1xVPHs">
+                <node concept="chp4Y" id="1KdBIfWOXSs" role="ri$Ld">
+                  <ref role="cht4Q" to="28lk:6OepWIVJVYV" resolve="Unit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1KdBIfWOXSt" role="3clFbx">
+          <node concept="2MkqsV" id="1KdBIfWOXSu" role="3cqZAp">
+            <node concept="Xl_RD" id="1KdBIfWOXSv" role="2MkJ7o">
+              <property role="Xl_RC" value="Cannot not import a namespace defined in the same unit" />
+            </node>
+            <node concept="1YBJjd" id="1KdBIfWOXSw" role="1urrMF">
+              <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1KdBIfWOXSx" role="3cqZAp">
+        <node concept="3clFbS" id="1KdBIfWOXSy" role="3clFbx">
+          <node concept="2MkqsV" id="1KdBIfWOXSz" role="3cqZAp">
+            <node concept="Xl_RD" id="1KdBIfWOXS$" role="2MkJ7o">
+              <property role="Xl_RC" value="An element import must point to a namespace member" />
+            </node>
+            <node concept="1YBJjd" id="1KdBIfWOXS_" role="1urrMF">
+              <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="1KdBIfWOXSA" role="3clFbw">
+          <node concept="2OqwBi" id="1KdBIfWOXSB" role="3fr31v">
+            <node concept="37vLTw" id="1KdBIfWOXSC" role="2Oq$k0">
+              <ref role="3cqZAo" node="1KdBIfWOXSa" resolve="target" />
+            </node>
+            <node concept="1mIQ4w" id="1KdBIfWOXSD" role="2OqNvi">
+              <node concept="chp4Y" id="1KdBIfWOXSE" role="cj9EA">
+                <ref role="cht4Q" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1KdBIfWPBYh" role="3cqZAp">
+        <node concept="3clFbS" id="1KdBIfWPBYj" role="3clFbx">
+          <node concept="2MkqsV" id="1KdBIfWPE6N" role="3cqZAp">
+            <node concept="Xl_RD" id="1KdBIfWPE72" role="2MkJ7o">
+              <property role="Xl_RC" value="A package import must point to a package definition" />
+            </node>
+            <node concept="1YBJjd" id="1KdBIfWPE_9" role="1urrMF">
+              <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="1KdBIfWPCXU" role="3clFbw">
+          <node concept="3fqX7Q" id="1KdBIfWPD3B" role="3uHU7w">
+            <node concept="2OqwBi" id="1KdBIfWPDs8" role="3fr31v">
+              <node concept="37vLTw" id="1KdBIfWPD5C" role="2Oq$k0">
+                <ref role="3cqZAo" node="1KdBIfWOXSa" resolve="target" />
+              </node>
+              <node concept="1mIQ4w" id="1KdBIfWPDDD" role="2OqNvi">
+                <node concept="chp4Y" id="1KdBIfWPDUq" role="cj9EA">
+                  <ref role="cht4Q" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1KdBIfWPChJ" role="3uHU7B">
+            <node concept="1YBJjd" id="1KdBIfWPC72" role="2Oq$k0">
+              <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
+            </node>
+            <node concept="3TrcHB" id="1KdBIfWPCC0" role="2OqNvi">
+              <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1KdBIfWOXS5" role="1YuTPh">
+      <property role="TrG5h" value="importDeclaration" />
+      <ref role="1YaFvo" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    </node>
+  </node>
 </model>
 

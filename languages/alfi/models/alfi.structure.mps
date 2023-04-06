@@ -1357,8 +1357,42 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2SMO68r$0GW" resolve="NamespaceDefinition" />
     </node>
+    <node concept="1TJgyj" id="1KdBIfWKYgZ" role="1TKVEi">
+      <property role="IQ2ns" value="2021446509794681919" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1KdBIfWJWns" resolve="ImportDeclaration" />
+    </node>
     <node concept="PrWs8" id="6OepWIVLgul" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KdBIfWJWns">
+    <property role="EcuMT" value="2021446509794411996" />
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="ImportDeclaration" />
+    <property role="34LRSv" value="import" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="1KdBIfWJWnt" role="1TKVEl">
+      <property role="IQ2nx" value="2021446509794411997" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="6OepWIVA92D" resolve="Visibility" />
+    </node>
+    <node concept="1TJgyi" id="1KdBIfWJZ2v" role="1TKVEl">
+      <property role="IQ2nx" value="2021446509794422943" />
+      <property role="TrG5h" value="isPackageImport" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="1KdBIfWJZ1E" role="1TKVEi">
+      <property role="IQ2ns" value="2021446509794422890" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="referent" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
+    </node>
+    <node concept="PrWs8" id="1KdBIfWNhZs" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>
