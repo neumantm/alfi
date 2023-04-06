@@ -100,18 +100,14 @@ Limitations are listed as subpoints of the chapters.
 
 ## Units (10)
 
-- [ ] 10.1 Overview
-- [x] 10.2 Namespaces
-  - only structure, not the namespacing (typesystem) logic
-  - no visibility
-- [x] 10.3 Packages
-  - only structure, not the namespacing (typesystem) logic
-  - no visibility
+- [x] 10.1 Overview
+  - not imports
   - no stereotypes
-  - only Definition, not stub
+- [x] 10.2 Namespaces
+- [x] 10.3 Packages
+  - no stereotypes
 - [ ] 10.4 Classifiers
   - [x] 10.4.1 Overview
-    - only Definition, not stub
     - not template parameters
     - not specializations
     - no editor for abstract
@@ -122,7 +118,6 @@ Limitations are listed as subpoints of the chapters.
   - [ ] 10.4.6 Enumerations
   - [ ] 10.4.7 Signals
   - [x] 10.4.8 Activities
-    - only Definition, not stub
     - not template parameters
     - no editor for parameters and return parameter
 - [ ] 10.5 Features
