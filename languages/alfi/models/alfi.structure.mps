@@ -172,6 +172,13 @@
       <property role="TrG5h" value="isAbstract" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyj" id="1KdBIfX5Xzl" role="1TKVEi">
+      <property role="IQ2ns" value="2021446509800184021" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="specializations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kuSLC0oTxh" resolve="QualifiedName" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r_3Qs">
     <property role="EcuMT" value="3328952194368290204" />
@@ -1429,6 +1436,16 @@
     <node concept="25R33" id="1KdBIfWTSLy" role="25R1y">
       <property role="3tVfz5" value="2021446509797018722" />
       <property role="TrG5h" value="ModelLibrary" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KdBIfX5Okr">
+    <property role="EcuMT" value="2021446509800146203" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="DataTypeDefinition" />
+    <property role="34LRSv" value="datatype" />
+    <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
+    <node concept="PrWs8" id="1KdBIfXq3yj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>

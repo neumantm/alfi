@@ -18,6 +18,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -65,8 +68,10 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -80,6 +85,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -1274,25 +1283,93 @@
           </node>
           <node concept="3clFbJ" id="1KdBIfWW7pK" role="3cqZAp">
             <node concept="3clFbS" id="1KdBIfWW7pL" role="3clFbx">
-              <node concept="3clFbJ" id="1KdBIfWYJXs" role="3cqZAp">
-                <node concept="3clFbS" id="1KdBIfWYJXu" role="3clFbx">
-                  <node concept="2MkqsV" id="1KdBIfWW7pM" role="3cqZAp">
-                    <node concept="Xl_RD" id="1KdBIfWW7pN" role="2MkJ7o">
-                      <property role="Xl_RC" value="The annotation @primitive is only valid for data type definitions and activity definitions" />
-                    </node>
-                    <node concept="37vLTw" id="1KdBIfWW7pO" role="1urrMF">
-                      <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+              <node concept="3clFbJ" id="1KdBIfX7vjE" role="3cqZAp">
+                <node concept="3clFbS" id="1KdBIfX7vjG" role="3clFbx">
+                  <node concept="3SKdUt" id="1KdBIfX7Czy" role="3cqZAp">
+                    <node concept="1PaTwC" id="1KdBIfX7Czz" role="1aUNEU">
+                      <node concept="3oM_SD" id="1KdBIfX7CzD" role="1PaTwD">
+                        <property role="3oM_SC" value="pass" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3fqX7Q" id="1KdBIfWW7pQ" role="3clFbw">
-                  <node concept="2OqwBi" id="1KdBIfWW7pR" role="3fr31v">
-                    <node concept="1YBJjd" id="1KdBIfWW7pS" role="2Oq$k0">
+                <node concept="2OqwBi" id="1KdBIfX7vwV" role="3clFbw">
+                  <node concept="1YBJjd" id="1KdBIfX7vkc" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="1mIQ4w" id="1KdBIfX7_aK" role="2OqNvi">
+                    <node concept="chp4Y" id="1KdBIfX7B5P" role="cj9EA">
+                      <ref role="cht4Q" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3eNFk2" id="1KdBIfX7CzJ" role="3eNLev">
+                  <node concept="2OqwBi" id="1KdBIfX7EdH" role="3eO9$A">
+                    <node concept="1YBJjd" id="1KdBIfX7E1_" role="2Oq$k0">
                       <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
                     </node>
-                    <node concept="1mIQ4w" id="1KdBIfWW7pT" role="2OqNvi">
-                      <node concept="chp4Y" id="1KdBIfWW7pU" role="cj9EA">
-                        <ref role="cht4Q" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
+                    <node concept="1mIQ4w" id="1KdBIfX7FHz" role="2OqNvi">
+                      <node concept="chp4Y" id="1KdBIfX7Hb_" role="cj9EA">
+                        <ref role="cht4Q" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="1KdBIfX7CzL" role="3eOfB_">
+                    <node concept="3cpWs8" id="1KdBIfX7QJQ" role="3cqZAp">
+                      <node concept="3cpWsn" id="1KdBIfX7QJR" role="3cpWs9">
+                        <property role="TrG5h" value="def" />
+                        <node concept="3Tqbb2" id="1KdBIfX7Q_W" role="1tU5fm">
+                          <ref role="ehGHo" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+                        </node>
+                        <node concept="1PxgMI" id="1KdBIfX7QJS" role="33vP2m">
+                          <property role="1BlNFB" value="true" />
+                          <node concept="chp4Y" id="1KdBIfX7QJT" role="3oSUPX">
+                            <ref role="cht4Q" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+                          </node>
+                          <node concept="1YBJjd" id="1KdBIfX7QJU" role="1m5AlR">
+                            <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="1KdBIfX7JWK" role="3cqZAp">
+                      <node concept="3clFbS" id="1KdBIfX7JWM" role="3clFbx">
+                        <node concept="2MkqsV" id="1KdBIfX8ks$" role="3cqZAp">
+                          <node concept="Xl_RD" id="1KdBIfX8ksL" role="2MkJ7o">
+                            <property role="Xl_RC" value="Primitive datatypes cannot have any members" />
+                          </node>
+                          <node concept="1YBJjd" id="1KdBIfX8ktr" role="1urrMF">
+                            <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3eOSWO" id="1KdBIfX8iWB" role="3clFbw">
+                        <node concept="3cmrfG" id="1KdBIfX8iWE" role="3uHU7w">
+                          <property role="3cmrfH" value="0" />
+                        </node>
+                        <node concept="2OqwBi" id="1KdBIfX88RU" role="3uHU7B">
+                          <node concept="2OqwBi" id="1KdBIfX836n" role="2Oq$k0">
+                            <node concept="37vLTw" id="1KdBIfX80V6" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1KdBIfX7QJR" resolve="def" />
+                            </node>
+                            <node concept="3Tsc0h" id="1KdBIfX84T9" role="2OqNvi">
+                              <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
+                            </node>
+                          </node>
+                          <node concept="34oBXx" id="1KdBIfX8f$P" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="9aQIb" id="1KdBIfX8kuX" role="9aQIa">
+                  <node concept="3clFbS" id="1KdBIfX8kuY" role="9aQI4">
+                    <node concept="2MkqsV" id="1KdBIfWW7pM" role="3cqZAp">
+                      <node concept="Xl_RD" id="1KdBIfWW7pN" role="2MkJ7o">
+                        <property role="Xl_RC" value="The annotation @primitive is only valid for data type definitions and activity definitions" />
+                      </node>
+                      <node concept="37vLTw" id="1KdBIfWW7pO" role="1urrMF">
+                        <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
                       </node>
                     </node>
                   </node>
@@ -1866,6 +1943,123 @@
     <node concept="1YaCAy" id="1KdBIfWOXS5" role="1YuTPh">
       <property role="TrG5h" value="importDeclaration" />
       <ref role="1YaFvo" to="28lk:1KdBIfWJWns" resolve="ImportDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="1KdBIfX5Okz">
+    <property role="TrG5h" value="check_DataTypeDefinition" />
+    <property role="3GE5qa" value="units.classifiers" />
+    <node concept="3clFbS" id="1KdBIfX5Ok$" role="18ibNy">
+      <node concept="3clFbJ" id="1KdBIfX5OkE" role="3cqZAp">
+        <node concept="3clFbC" id="1KdBIfX6tqb" role="3clFbw">
+          <node concept="2OqwBi" id="1KdBIfX5UD1" role="3uHU7B">
+            <node concept="2OqwBi" id="1KdBIfX5Q$B" role="2Oq$k0">
+              <node concept="2OqwBi" id="1KdBIfX5O$z" role="2Oq$k0">
+                <node concept="1YBJjd" id="1KdBIfX5OkQ" role="2Oq$k0">
+                  <ref role="1YBMHb" node="1KdBIfX5OkA" resolve="dataTypeDefinition" />
+                </node>
+                <node concept="3Tsc0h" id="1KdBIfX5OT4" role="2OqNvi">
+                  <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="1KdBIfX5RT$" role="2OqNvi">
+                <node concept="1bVj0M" id="1KdBIfX5RTA" role="23t8la">
+                  <node concept="3clFbS" id="1KdBIfX5RTB" role="1bW5cS">
+                    <node concept="3clFbF" id="1KdBIfX5RZA" role="3cqZAp">
+                      <node concept="17R0WA" id="1KdBIfX5T9Y" role="3clFbG">
+                        <node concept="2OqwBi" id="1KdBIfX5TUn" role="3uHU7w">
+                          <node concept="1XH99k" id="1KdBIfX5TiF" role="2Oq$k0">
+                            <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                          </node>
+                          <node concept="2ViDtV" id="1KdBIfX5UkU" role="2OqNvi">
+                            <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1KdBIfX5Sdd" role="3uHU7B">
+                          <node concept="37vLTw" id="1KdBIfX5RZ_" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1KdBIfX5RTC" resolve="it" />
+                          </node>
+                          <node concept="3TrcHB" id="1KdBIfX5SvK" role="2OqNvi">
+                            <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="1KdBIfX5RTC" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="1KdBIfX5RTD" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="1KdBIfX5Vbg" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="1KdBIfX5WX4" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="1KdBIfX5OkG" role="3clFbx">
+          <node concept="2MkqsV" id="1KdBIfX5X0g" role="3cqZAp">
+            <node concept="Xl_RD" id="1KdBIfX5X0s" role="2MkJ7o">
+              <property role="Xl_RC" value="Only primitive datatypes are currently supported" />
+            </node>
+            <node concept="1YBJjd" id="1KdBIfX5X1k" role="1urrMF">
+              <ref role="1YBMHb" node="1KdBIfX5OkA" resolve="dataTypeDefinition" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DcWWT" id="1KdBIfXqSca" role="3cqZAp">
+        <node concept="3clFbS" id="1KdBIfXqScc" role="2LFqv$">
+          <node concept="3clFbJ" id="1KdBIfXqVph" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfXqVpj" role="3clFbx">
+              <node concept="2MkqsV" id="1KdBIfXqWMI" role="3cqZAp">
+                <node concept="Xl_RD" id="1KdBIfXqWMX" role="2MkJ7o">
+                  <property role="Xl_RC" value="Datatypes can only spezialize datatypes." />
+                </node>
+                <node concept="37vLTw" id="1KdBIfXqWOO" role="1urrMF">
+                  <ref role="3cqZAo" node="1KdBIfXqSaa" resolve="specialization" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="1KdBIfXqWFX" role="3clFbw">
+              <node concept="2OqwBi" id="1KdBIfXqWFZ" role="3fr31v">
+                <node concept="2OqwBi" id="1KdBIfXqWG0" role="2Oq$k0">
+                  <node concept="37vLTw" id="1KdBIfXqWG1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KdBIfXqSaa" resolve="specialization" />
+                  </node>
+                  <node concept="2qgKlT" id="1KdBIfXqWG2" role="2OqNvi">
+                    <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="1KdBIfXqWG3" role="2OqNvi">
+                  <node concept="chp4Y" id="1KdBIfXqWG4" role="cj9EA">
+                    <ref role="cht4Q" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1KdBIfXqSPI" role="1DdaDG">
+          <node concept="1YBJjd" id="1KdBIfXqSlA" role="2Oq$k0">
+            <ref role="1YBMHb" node="1KdBIfX5OkA" resolve="dataTypeDefinition" />
+          </node>
+          <node concept="3Tsc0h" id="1KdBIfXqTTh" role="2OqNvi">
+            <ref role="3TtcxE" to="28lk:1KdBIfX5Xzl" resolve="specializations" />
+          </node>
+        </node>
+        <node concept="3cpWsn" id="1KdBIfXqSaa" role="1Duv9x">
+          <property role="TrG5h" value="specialization" />
+          <node concept="3Tqbb2" id="1KdBIfXqSaO" role="1tU5fm">
+            <ref role="ehGHo" to="28lk:2kuSLC0oTxh" resolve="QualifiedName" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1KdBIfX5OkA" role="1YuTPh">
+      <property role="TrG5h" value="dataTypeDefinition" />
+      <ref role="1YaFvo" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
     </node>
   </node>
 </model>

@@ -25,10 +25,14 @@
       </concept>
       <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
         <property id="3328952194368015157" name="visibility" index="PCHHn" />
+        <property id="3328952194368015160" name="isStub" index="PCHHq" />
         <child id="2021446509797018758" name="stereotypeAnnotation" index="3wUx9_" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
+      </concept>
+      <concept id="3328952194368015167" name="alfi.structure.ClassifierDefinition" flags="ng" index="PCHHt">
+        <child id="2021446509800184021" name="specializations" index="3x6$oQ" />
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
@@ -70,6 +74,7 @@
       <concept id="2021446509797018714" name="alfi.structure.StereotypeAnnotation" flags="ng" index="3wUxaT">
         <property id="2021446509797018728" name="stereotypeName" index="3wUxab" />
       </concept>
+      <concept id="2021446509800146203" name="alfi.structure.DataTypeDefinition" flags="ng" index="3x6HJS" />
     </language>
   </registry>
   <node concept="3mGtxK" id="6OepWIVNm$A">
@@ -126,9 +131,27 @@
       </node>
       <node concept="2qCqA3" id="1KdBIfWlTyh" role="PCHHv">
         <property role="TrG5h" value="Jo" />
+        <property role="PCHHq" value="true" />
       </node>
       <node concept="PCHHj" id="1KdBIfWhVSC" role="PCHHv">
         <property role="TrG5h" value="Wooooow" />
+      </node>
+      <node concept="3x6HJS" id="1KdBIfXacCJ" role="PCHHv">
+        <property role="TrG5h" value="asdddd" />
+        <node concept="3wUxaT" id="1KdBIfXacCR" role="3wUx9_">
+          <property role="3wUxab" value="1KdBIfWTSLu/primitive" />
+        </node>
+      </node>
+      <node concept="3x6HJS" id="1KdBIfXrfTY" role="PCHHv">
+        <property role="TrG5h" value="foasdasd" />
+        <node concept="3wUxaT" id="1KdBIfXrfU8" role="3wUx9_">
+          <property role="3wUxab" value="1KdBIfWTSLu/primitive" />
+        </node>
+        <node concept="_vnHb" id="1KdBIfXrfUc" role="3x6$oQ">
+          <node concept="2RqM1Q" id="1KdBIfXrfUd" role="_vnH8">
+            <ref role="2RqM1R" node="1KdBIfXacCJ" resolve="asdddd" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -179,7 +202,7 @@
           <ref role="2RqM1R" node="4jcHaHwBm7Q" resolve="Foo" />
         </node>
         <node concept="2RqM1Q" id="1KdBIfWMpPx" role="_vnH8">
-          <ref role="2RqM1R" node="1KdBIfWmEzl" resolve="maa" />
+          <ref role="2RqM1R" node="5Jdbbz9_WBd" resolve="maa" />
         </node>
       </node>
     </node>
@@ -344,7 +367,7 @@
               <ref role="2RqM1R" node="604l4jmuLhu" resolve="asd" />
             </node>
             <node concept="2RqM1Q" id="1KdBIfWTPxa" role="_vnH8">
-              <ref role="2RqM1R" node="1KdBIfWmEzl" resolve="maa" />
+              <ref role="2RqM1R" node="5Jdbbz9_WBd" resolve="maa" />
             </node>
           </node>
         </node>

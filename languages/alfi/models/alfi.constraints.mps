@@ -25,7 +25,6 @@
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -38,9 +37,6 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -111,9 +107,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
@@ -122,9 +115,6 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
   </registry>
   <node concept="1M2fIO" id="6ldY1Si$Wia">
@@ -316,26 +306,6 @@
     <ref role="1M2myG" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
     <node concept="EnEH3" id="604l4jmuLpE" role="1MhHOB">
       <ref role="EomxK" to="28lk:2SMO68r$0GS" resolve="isStub" />
-      <node concept="Eqf_E" id="604l4jmuLqB" role="EtsB7">
-        <node concept="3clFbS" id="604l4jmuLqC" role="2VODD2">
-          <node concept="3clFbF" id="604l4jmuLvy" role="3cqZAp">
-            <node concept="3clFbC" id="604l4jmuU_e" role="3clFbG">
-              <node concept="3cmrfG" id="604l4jmuVc0" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2OqwBi" id="604l4jmuOY7" role="3uHU7B">
-                <node concept="2OqwBi" id="604l4jmuLM3" role="2Oq$k0">
-                  <node concept="EsrRn" id="604l4jmuLvx" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="604l4jmuM4T" role="2OqNvi">
-                    <ref role="3TtcxE" to="28lk:2SMO68r$0GX" resolve="ownedMember" />
-                  </node>
-                </node>
-                <node concept="34oBXx" id="604l4jmuU4p" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="9SLcT" id="7bDXsfCi5XX" role="9SGkU">
       <node concept="3clFbS" id="7bDXsfCi5XY" role="2VODD2">

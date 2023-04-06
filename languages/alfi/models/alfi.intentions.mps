@@ -147,6 +147,7 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872828" name="jetbrains.mps.lang.actions.structure.NF_Node_ReplaceWithNewOperation" flags="nn" index="2DeJnW" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1487,6 +1488,35 @@
             <node concept="3TrcHB" id="1KdBIfWK21F" role="2OqNvi">
               <ref role="3TsBF5" to="28lk:1KdBIfWJZ2v" resolve="isPackageImport" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1KdBIfXp1SL">
+    <property role="3GE5qa" value="units.classifiers" />
+    <property role="TrG5h" value="DataTypeDefinition_AddSpecialization" />
+    <ref role="2ZfgGC" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
+    <node concept="2S6ZIM" id="1KdBIfXp1SM" role="2ZfVej">
+      <node concept="3clFbS" id="1KdBIfXp1SN" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfXp1Y9" role="3cqZAp">
+          <node concept="Xl_RD" id="1KdBIfXp1Y8" role="3clFbG">
+            <property role="Xl_RC" value="Add specialization for this datatype" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1KdBIfXp1SO" role="2ZfgGD">
+      <node concept="3clFbS" id="1KdBIfXp1SP" role="2VODD2">
+        <node concept="3clFbF" id="1KdBIfXp2c0" role="3cqZAp">
+          <node concept="2OqwBi" id="1KdBIfXp4cr" role="3clFbG">
+            <node concept="2OqwBi" id="1KdBIfXp2mg" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1KdBIfXp2bZ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1KdBIfXp2HF" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:1KdBIfX5Xzl" resolve="specializations" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="1KdBIfXp7EE" role="2OqNvi" />
           </node>
         </node>
       </node>

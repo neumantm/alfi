@@ -108,11 +108,11 @@ Limitations are listed as subpoints of the chapters.
 - [ ] 10.4 Classifiers
   - [x] 10.4.1 Overview
     - not template parameters
-    - not specializations
     - no editor for abstract
   - [ ] 10.4.2 Classes
   - [ ] 10.4.3 Active Classes
-  - [ ] 10.4.4 Data Types
+  - [x] 10.4.4 Data Types
+    - only primitive datatypes
   - [ ] 10.4.5 Associations
   - [ ] 10.4.6 Enumerations
   - [ ] 10.4.7 Signals
