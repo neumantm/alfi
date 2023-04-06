@@ -25,6 +25,7 @@
       </concept>
       <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
         <property id="3328952194368015157" name="visibility" index="PCHHn" />
+        <child id="2021446509797018758" name="stereotypeAnnotation" index="3wUx9_" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
@@ -66,6 +67,9 @@
         <property id="2021446509794422943" name="isPackageImport" index="3wGATW" />
         <child id="2021446509794422890" name="referent" index="3wGAU9" />
       </concept>
+      <concept id="2021446509797018714" name="alfi.structure.StereotypeAnnotation" flags="ng" index="3wUxaT">
+        <property id="2021446509797018728" name="stereotypeName" index="3wUxab" />
+      </concept>
     </language>
   </registry>
   <node concept="3mGtxK" id="6OepWIVNm$A">
@@ -76,12 +80,18 @@
       <property role="3GE5qa" value="Blop::Booo" />
       <node concept="PCHHj" id="1KdBIfWmEyA" role="PCHHv">
         <property role="TrG5h" value="xyz" />
+        <node concept="3wUxaT" id="1KdBIfWZ1gO" role="3wUx9_">
+          <property role="3wUxab" value="1KdBIfWTSLv/external" />
+        </node>
       </node>
       <node concept="PCHHj" id="1KdBIfWlTyp" role="PCHHv">
         <property role="TrG5h" value="asd" />
         <node concept="PCHzy" id="1KdBIfWlTys" role="PCHGa">
           <node concept="PDbRn" id="1KdBIfWlTyu" role="PCHzz" />
         </node>
+      </node>
+      <node concept="3wUxaT" id="1KdBIfX1n5J" role="3wUx9_">
+        <property role="3wUxab" value="1KdBIfWTSLy/ModelLibrary" />
       </node>
     </node>
     <node concept="3mGtyY" id="4jcHaHwEKA4" role="3mGtxR">

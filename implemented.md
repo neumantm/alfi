@@ -102,10 +102,9 @@ Limitations are listed as subpoints of the chapters.
 
 - [x] 10.1 Overview
   - no alias for imports
-  - no stereotypes
+  - no parameters for stereotypes
 - [x] 10.2 Namespaces
 - [x] 10.3 Packages
-  - no stereotypes
 - [ ] 10.4 Classifiers
   - [x] 10.4.1 Overview
     - not template parameters

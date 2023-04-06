@@ -139,6 +139,13 @@
     <node concept="PrWs8" id="2SMO68r_Jlj" role="PzmwI">
       <ref role="PrY4T" node="2SMO68r_Hx$" resolve="DocumentedElement" />
     </node>
+    <node concept="1TJgyj" id="1KdBIfWTSM6" role="1TKVEi">
+      <property role="IQ2ns" value="2021446509797018758" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stereotypeAnnotation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1KdBIfWTSLq" resolve="StereotypeAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0GW">
     <property role="EcuMT" value="3328952194368015164" />
@@ -1393,6 +1400,35 @@
     </node>
     <node concept="PrWs8" id="1KdBIfWNhZs" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1KdBIfWTSLq">
+    <property role="EcuMT" value="2021446509797018714" />
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="StereotypeAnnotation" />
+    <property role="34LRSv" value="@" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="1KdBIfWTSLC" role="1TKVEl">
+      <property role="IQ2nx" value="2021446509797018728" />
+      <property role="TrG5h" value="stereotypeName" />
+      <ref role="AX2Wp" node="1KdBIfWTSLt" resolve="SupportedStereotypes" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1KdBIfWTSLt">
+    <property role="3F6X1D" value="2021446509797018717" />
+    <property role="3GE5qa" value="units" />
+    <property role="TrG5h" value="SupportedStereotypes" />
+    <node concept="25R33" id="1KdBIfWTSLu" role="25R1y">
+      <property role="3tVfz5" value="2021446509797018718" />
+      <property role="TrG5h" value="primitive" />
+    </node>
+    <node concept="25R33" id="1KdBIfWTSLv" role="25R1y">
+      <property role="3tVfz5" value="2021446509797018719" />
+      <property role="TrG5h" value="external" />
+    </node>
+    <node concept="25R33" id="1KdBIfWTSLy" role="25R1y">
+      <property role="3tVfz5" value="2021446509797018722" />
+      <property role="TrG5h" value="ModelLibrary" />
     </node>
   </node>
 </model>

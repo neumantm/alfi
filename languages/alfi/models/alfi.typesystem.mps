@@ -27,6 +27,9 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -102,9 +105,20 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -1114,6 +1128,366 @@
           </node>
           <node concept="3TrcHB" id="1KdBIfWpCAo" role="2OqNvi">
             <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="1KdBIfWWh$7" role="3cqZAp" />
+      <node concept="1DcWWT" id="1KdBIfWV2$B" role="3cqZAp">
+        <node concept="3clFbS" id="1KdBIfWV2$D" role="2LFqv$">
+          <node concept="3clFbJ" id="1KdBIfWV6yk" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfWV6ym" role="3clFbx">
+              <node concept="2MkqsV" id="1KdBIfWVHmF" role="3cqZAp">
+                <node concept="Xl_RD" id="1KdBIfWVHmV" role="2MkJ7o">
+                  <property role="Xl_RC" value="Cannot apply the same stereotype twice." />
+                </node>
+                <node concept="37vLTw" id="1KdBIfWW4Ub" role="1urrMF">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="1KdBIfWVNiu" role="3clFbw">
+              <node concept="3cmrfG" id="1KdBIfWVNix" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="1KdBIfWVHCV" role="3uHU7B">
+                <node concept="2OqwBi" id="1KdBIfWVcfH" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1KdBIfWV6Jh" role="2Oq$k0">
+                    <node concept="1YBJjd" id="1KdBIfWV6yz" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                    </node>
+                    <node concept="3Tsc0h" id="1KdBIfWV9ky" role="2OqNvi">
+                      <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="3zZkjj" id="1KdBIfWVfVj" role="2OqNvi">
+                    <node concept="1bVj0M" id="1KdBIfWVfVl" role="23t8la">
+                      <node concept="3clFbS" id="1KdBIfWVfVm" role="1bW5cS">
+                        <node concept="3clFbF" id="1KdBIfWVhjR" role="3cqZAp">
+                          <node concept="1Wc70l" id="1KdBIfWVuop" role="3clFbG">
+                            <node concept="17R0WA" id="1KdBIfWV_sR" role="3uHU7w">
+                              <node concept="2OqwBi" id="1KdBIfWVDvN" role="3uHU7w">
+                                <node concept="37vLTw" id="1KdBIfWVBX6" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                                </node>
+                                <node concept="3TrcHB" id="1KdBIfWVF3I" role="2OqNvi">
+                                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="1KdBIfWVye9" role="3uHU7B">
+                                <node concept="37vLTw" id="1KdBIfWVwMV" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1KdBIfWVfVn" resolve="it" />
+                                </node>
+                                <node concept="3TrcHB" id="1KdBIfWVzNv" role="2OqNvi">
+                                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="17QLQc" id="1KdBIfWVmWO" role="3uHU7B">
+                              <node concept="37vLTw" id="1KdBIfWVhjQ" role="3uHU7B">
+                                <ref role="3cqZAo" node="1KdBIfWVfVn" resolve="it" />
+                              </node>
+                              <node concept="37vLTw" id="1KdBIfWVonR" role="3uHU7w">
+                                <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="1KdBIfWVfVn" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="1KdBIfWVfVo" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="34oBXx" id="1KdBIfWVKD_" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1KdBIfWVOEg" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfWVOEi" role="3clFbx">
+              <node concept="3clFbJ" id="1KdBIfWYsZc" role="3cqZAp">
+                <node concept="3clFbS" id="1KdBIfWYsZe" role="3clFbx">
+                  <node concept="2MkqsV" id="1KdBIfWW4Js" role="3cqZAp">
+                    <node concept="Xl_RD" id="1KdBIfWW4JG" role="2MkJ7o">
+                      <property role="Xl_RC" value="The annotation @external is only valid for namespace definitions" />
+                    </node>
+                    <node concept="37vLTw" id="1KdBIfWW4LA" role="1urrMF">
+                      <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="1KdBIfWW0QS" role="3clFbw">
+                  <node concept="2OqwBi" id="1KdBIfWW0QU" role="3fr31v">
+                    <node concept="1YBJjd" id="1KdBIfWW0QV" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                    </node>
+                    <node concept="1mIQ4w" id="1KdBIfWW0QW" role="2OqNvi">
+                      <node concept="chp4Y" id="1KdBIfWW0QX" role="cj9EA">
+                        <ref role="cht4Q" to="28lk:2SMO68r$0GW" resolve="NamespaceDefinition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1KdBIfWYtfV" role="3cqZAp">
+                <node concept="3clFbS" id="1KdBIfWYtfX" role="3clFbx">
+                  <node concept="2MkqsV" id="1KdBIfWYEkD" role="3cqZAp">
+                    <node concept="Xl_RD" id="1KdBIfWYEkT" role="2MkJ7o">
+                      <property role="Xl_RC" value="The annotation @external is only valid for stubs" />
+                    </node>
+                    <node concept="37vLTw" id="1KdBIfWYEm1" role="1urrMF">
+                      <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="1KdBIfWYtgl" role="3clFbw">
+                  <node concept="2OqwBi" id="1KdBIfWY_VW" role="3fr31v">
+                    <node concept="1YBJjd" id="1KdBIfWY$kJ" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                    </node>
+                    <node concept="3TrcHB" id="1KdBIfWYCRD" role="2OqNvi">
+                      <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17R0WA" id="1KdBIfWVPxd" role="3clFbw">
+              <node concept="2OqwBi" id="1KdBIfWVOON" role="3uHU7B">
+                <node concept="37vLTw" id="1KdBIfWVOF6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+                <node concept="3TrcHB" id="1KdBIfWVPeB" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1KdBIfWVQ9x" role="3uHU7w">
+                <node concept="1XH99k" id="1KdBIfWVPDa" role="2Oq$k0">
+                  <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                </node>
+                <node concept="2ViDtV" id="1KdBIfWVQmY" role="2OqNvi">
+                  <ref role="2ViDtZ" to="28lk:1KdBIfWTSLv" resolve="external" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1KdBIfWW7pK" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfWW7pL" role="3clFbx">
+              <node concept="3clFbJ" id="1KdBIfWYJXs" role="3cqZAp">
+                <node concept="3clFbS" id="1KdBIfWYJXu" role="3clFbx">
+                  <node concept="2MkqsV" id="1KdBIfWW7pM" role="3cqZAp">
+                    <node concept="Xl_RD" id="1KdBIfWW7pN" role="2MkJ7o">
+                      <property role="Xl_RC" value="The annotation @primitive is only valid for data type definitions and activity definitions" />
+                    </node>
+                    <node concept="37vLTw" id="1KdBIfWW7pO" role="1urrMF">
+                      <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="1KdBIfWW7pQ" role="3clFbw">
+                  <node concept="2OqwBi" id="1KdBIfWW7pR" role="3fr31v">
+                    <node concept="1YBJjd" id="1KdBIfWW7pS" role="2Oq$k0">
+                      <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                    </node>
+                    <node concept="1mIQ4w" id="1KdBIfWW7pT" role="2OqNvi">
+                      <node concept="chp4Y" id="1KdBIfWW7pU" role="cj9EA">
+                        <ref role="cht4Q" to="28lk:2SMO68r$0GL" resolve="ActivityDefinition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1KdBIfWYKie" role="3cqZAp">
+                <node concept="3clFbS" id="1KdBIfWYKig" role="3clFbx">
+                  <node concept="2MkqsV" id="1KdBIfWYOSp" role="3cqZAp">
+                    <node concept="Xl_RD" id="1KdBIfWYOSD" role="2MkJ7o">
+                      <property role="Xl_RC" value="The annotation @primitive is not valid for stubs" />
+                    </node>
+                    <node concept="37vLTw" id="1KdBIfWYOTA" role="1urrMF">
+                      <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1KdBIfWYKvn" role="3clFbw">
+                  <node concept="1YBJjd" id="1KdBIfWYKiC" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="3TrcHB" id="1KdBIfWYNq1" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17R0WA" id="1KdBIfWW7pV" role="3clFbw">
+              <node concept="2OqwBi" id="1KdBIfWW7pW" role="3uHU7B">
+                <node concept="37vLTw" id="1KdBIfWW7pX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+                <node concept="3TrcHB" id="1KdBIfWW7pY" role="2OqNvi">
+                  <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1KdBIfWW7pZ" role="3uHU7w">
+                <node concept="1XH99k" id="1KdBIfWW7q0" role="2Oq$k0">
+                  <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                </node>
+                <node concept="2ViDtV" id="1KdBIfWW7q1" role="2OqNvi">
+                  <ref role="2ViDtZ" to="28lk:1KdBIfWTSLu" resolve="primitive" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1KdBIfWWcLr" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfWWcLs" role="3clFbx">
+              <node concept="2MkqsV" id="1KdBIfWWcLt" role="3cqZAp">
+                <node concept="Xl_RD" id="1KdBIfWWcLu" role="2MkJ7o">
+                  <property role="Xl_RC" value="The annotation @ModelLibrary is only valid for package definitions" />
+                </node>
+                <node concept="37vLTw" id="1KdBIfWWcLv" role="1urrMF">
+                  <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="1KdBIfWWcLw" role="3clFbw">
+              <node concept="3fqX7Q" id="1KdBIfWWcLx" role="3uHU7w">
+                <node concept="2OqwBi" id="1KdBIfWWcLy" role="3fr31v">
+                  <node concept="1YBJjd" id="1KdBIfWWcLz" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="1mIQ4w" id="1KdBIfWWcL$" role="2OqNvi">
+                    <node concept="chp4Y" id="1KdBIfWWcL_" role="cj9EA">
+                      <ref role="cht4Q" to="28lk:7bDXsfCi5L0" resolve="PackageDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17R0WA" id="1KdBIfWWcLA" role="3uHU7B">
+                <node concept="2OqwBi" id="1KdBIfWWcLB" role="3uHU7B">
+                  <node concept="37vLTw" id="1KdBIfWWcLC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1KdBIfWV1a5" resolve="stereotypeAnnotation" />
+                  </node>
+                  <node concept="3TrcHB" id="1KdBIfWWcLD" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:1KdBIfWTSLC" resolve="stereotypeName" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1KdBIfWWcLE" role="3uHU7w">
+                  <node concept="1XH99k" id="1KdBIfWWcLF" role="2Oq$k0">
+                    <ref role="1XH99l" to="28lk:1KdBIfWTSLt" resolve="SupportedStereotypes" />
+                  </node>
+                  <node concept="2ViDtV" id="1KdBIfWWcLG" role="2OqNvi">
+                    <ref role="2ViDtZ" to="28lk:1KdBIfWTSLy" resolve="ModelLibrary" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="1KdBIfWV3p2" role="1DdaDG">
+          <node concept="1YBJjd" id="1KdBIfWV32e" role="2Oq$k0">
+            <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+          </node>
+          <node concept="3Tsc0h" id="1KdBIfWV4TU" role="2OqNvi">
+            <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+          </node>
+        </node>
+        <node concept="3cpWsn" id="1KdBIfWV1a5" role="1Duv9x">
+          <property role="TrG5h" value="stereotypeAnnotation" />
+          <node concept="3Tqbb2" id="1KdBIfWV1oU" role="1tU5fm">
+            <ref role="ehGHo" to="28lk:1KdBIfWTSLq" resolve="StereotypeAnnotation" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="1KdBIfWWNeE" role="3cqZAp" />
+      <node concept="3clFbH" id="1KdBIfWWOHO" role="3cqZAp" />
+      <node concept="3clFbJ" id="1KdBIfWWlJG" role="3cqZAp">
+        <node concept="3clFbS" id="1KdBIfWWlJI" role="3clFbx">
+          <node concept="3cpWs8" id="1KdBIfWWRGm" role="3cqZAp">
+            <node concept="3cpWsn" id="1KdBIfWWRGp" role="3cpWs9">
+              <property role="TrG5h" value="correspondingOtherMember" />
+              <node concept="3Tqbb2" id="1KdBIfWWRGk" role="1tU5fm">
+                <ref role="ehGHo" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
+              </node>
+              <node concept="3K4zz7" id="1KdBIfWWUos" role="33vP2m">
+                <node concept="2OqwBi" id="1KdBIfWWU_E" role="3K4Cdx">
+                  <node concept="1YBJjd" id="1KdBIfWWUoP" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="3TrcHB" id="1KdBIfWWXse" role="2OqNvi">
+                    <ref role="3TsBF5" to="28lk:2SMO68r$0GS" resolve="isStub" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1KdBIfWX0Fu" role="3K4E3e">
+                  <node concept="1YBJjd" id="1KdBIfWWYR7" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="2qgKlT" id="1KdBIfWX3yH" role="2OqNvi">
+                    <ref role="37wK5l" to="bqjt:1KdBIfWpl6q" resolve="getCorrespondingMemberInSubunit" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1KdBIfWX7Lf" role="3K4GZi">
+                  <node concept="1YBJjd" id="1KdBIfWX4Z_" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                  </node>
+                  <node concept="2qgKlT" id="1KdBIfWX9s_" role="2OqNvi">
+                    <ref role="37wK5l" to="bqjt:1KdBIfWfLEo" resolve="getCorrespondingStub" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="1KdBIfWXj7n" role="3cqZAp">
+            <node concept="3clFbS" id="1KdBIfWXj7p" role="3clFbx">
+              <node concept="2MkqsV" id="1KdBIfWXp$t" role="3cqZAp">
+                <node concept="Xl_RD" id="1KdBIfWXp$H" role="2MkJ7o">
+                  <property role="Xl_RC" value="Stereotype annotations can either be applied to the stub or the implementgation but not both" />
+                </node>
+                <node concept="1YBJjd" id="1KdBIfWXpAK" role="1urrMF">
+                  <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="1KdBIfWXk84" role="3clFbw">
+              <node concept="3eOSWO" id="1KdBIfWXps5" role="3uHU7w">
+                <node concept="3cmrfG" id="1KdBIfWXps8" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="1KdBIfWXmlU" role="3uHU7B">
+                  <node concept="2OqwBi" id="1KdBIfWXku9" role="2Oq$k0">
+                    <node concept="37vLTw" id="1KdBIfWXkci" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1KdBIfWWRGp" resolve="correspondingOtherMember" />
+                    </node>
+                    <node concept="3Tsc0h" id="1KdBIfWXkH2" role="2OqNvi">
+                      <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="1KdBIfWXoba" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1KdBIfWXjvA" role="3uHU7B">
+                <node concept="37vLTw" id="1KdBIfWXj8z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1KdBIfWWRGp" resolve="correspondingOtherMember" />
+                </node>
+                <node concept="3x8VRR" id="1KdBIfWXjKE" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1KdBIfWWlJH" role="3cqZAp" />
+        </node>
+        <node concept="3eOSWO" id="1KdBIfWWBla" role="3clFbw">
+          <node concept="2OqwBi" id="1KdBIfWWuUv" role="3uHU7B">
+            <node concept="2OqwBi" id="1KdBIfWWo_B" role="2Oq$k0">
+              <node concept="1YBJjd" id="1KdBIfWWooS" role="2Oq$k0">
+                <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+              </node>
+              <node concept="3Tsc0h" id="1KdBIfWWrru" role="2OqNvi">
+                <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="1KdBIfWWytO" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="1KdBIfWWBld" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
           </node>
         </node>
       </node>

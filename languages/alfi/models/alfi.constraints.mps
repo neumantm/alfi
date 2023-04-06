@@ -470,9 +470,6 @@
         </node>
       </node>
     </node>
-    <node concept="9SLcT" id="1KdBIfWO9YK" role="9SGkU">
-      <node concept="3clFbS" id="1KdBIfWO9YL" role="2VODD2" />
-    </node>
   </node>
 </model>
 
