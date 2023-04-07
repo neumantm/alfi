@@ -13,8 +13,8 @@
     <import index="bqjt" ref="r:ec1f09af-a5e9-4755-932d-7ccae7bdd219(alfi.behavior)" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -869,7 +869,7 @@
         <node concept="3clFbS" id="1KdBIfWg3bI" role="3clFbx">
           <node concept="2MkqsV" id="1KdBIfWg9lR" role="3cqZAp">
             <node concept="Xl_RD" id="1KdBIfWg9m6" role="2MkJ7o">
-              <property role="Xl_RC" value="Two sibling namespace members with matching signatures are not allowed" />
+              <property role="Xl_RC" value="Two sibling namespace members with the same names are not allowed" />
             </node>
             <node concept="1YBJjd" id="1KdBIfWg9ox" role="1urrMF">
               <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
@@ -892,22 +892,29 @@
                 <node concept="1bVj0M" id="1KdBIfWg5D5" role="23t8la">
                   <node concept="3clFbS" id="1KdBIfWg5D6" role="1bW5cS">
                     <node concept="3clFbF" id="1KdBIfWg5K0" role="3cqZAp">
-                      <node concept="2OqwBi" id="1KdBIfWg8Sg" role="3clFbG">
-                        <node concept="1eOMI4" id="1KdBIfWg8BJ" role="2Oq$k0">
-                          <node concept="1PxgMI" id="1KdBIfWg7Ss" role="1eOMHV">
-                            <property role="1BlNFB" value="true" />
-                            <node concept="chp4Y" id="1KdBIfWg8eb" role="3oSUPX">
-                              <ref role="cht4Q" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
-                            </node>
-                            <node concept="37vLTw" id="1KdBIfWg6Kh" role="1m5AlR">
-                              <ref role="3cqZAo" node="1KdBIfWg5D7" resolve="it" />
-                            </node>
+                      <node concept="17R0WA" id="1KdBIfXxwiJ" role="3clFbG">
+                        <node concept="2OqwBi" id="1KdBIfXxzQs" role="3uHU7w">
+                          <node concept="1YBJjd" id="1KdBIfXxxQ2" role="2Oq$k0">
+                            <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                          </node>
+                          <node concept="3TrcHB" id="1KdBIfXxAVS" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="1KdBIfWg969" role="2OqNvi">
-                          <ref role="37wK5l" to="bqjt:1KdBIfWfNMS" resolve="hasMatchingSignature" />
-                          <node concept="1YBJjd" id="1KdBIfWg9c9" role="37wK5m">
-                            <ref role="1YBMHb" node="6OepWIVJQ4N" resolve="namespaceMember" />
+                        <node concept="2OqwBi" id="1KdBIfXxsfB" role="3uHU7B">
+                          <node concept="1eOMI4" id="1KdBIfWg8BJ" role="2Oq$k0">
+                            <node concept="1PxgMI" id="1KdBIfWg7Ss" role="1eOMHV">
+                              <property role="1BlNFB" value="true" />
+                              <node concept="chp4Y" id="1KdBIfWg8eb" role="3oSUPX">
+                                <ref role="cht4Q" to="28lk:2SMO68r$0GM" resolve="NamespaceMember" />
+                              </node>
+                              <node concept="37vLTw" id="1KdBIfWg6Kh" role="1m5AlR">
+                                <ref role="3cqZAo" node="1KdBIfWg5D7" resolve="it" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="1KdBIfXxu3_" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
                       </node>
