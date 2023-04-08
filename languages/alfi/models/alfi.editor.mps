@@ -1314,7 +1314,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6cBsaQxeqem" role="3EZMnx">
-        <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="typeName" />
+        <ref role="1NtTu8" to="28lk:6cBsaQxenbl" resolve="tyypeName" />
       </node>
       <node concept="3F0ifn" id="6cBsaQxeqe$" role="3EZMnx">
         <property role="3F0ifm" value="[]" />
@@ -4033,6 +4033,13 @@
     </node>
     <node concept="22hDWg" id="1KdBIfXlpzd" role="22hAXT">
       <property role="TrG5h" value="DataTypeDefinition_AddSpecializationLeft" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1KdBIfXINXG">
+    <property role="3GE5qa" value="expressions.names" />
+    <ref role="1XX52x" to="28lk:1KdBIfXINXy" resolve="AnyTypeName" />
+    <node concept="PMmxH" id="1KdBIfXINXI" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

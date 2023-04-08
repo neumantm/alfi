@@ -26,7 +26,6 @@ Limitations are listed as subpoints of the chapters.
 
 - [ ] 8.1 Overview (Local Names and Assigned Sources)
 - [x] 8.2 Qualified Names
-  - not TypeName
   - not DotQualifiedName
   - not Templates
 - [ ] 8.3 Primary Expressions

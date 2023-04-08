@@ -2069,5 +2069,44 @@
       <ref role="1YaFvo" to="28lk:1KdBIfX5Okr" resolve="DataTypeDefinition" />
     </node>
   </node>
+  <node concept="18kY7G" id="1KdBIfXKTYY">
+    <property role="TrG5h" value="check_QualifiedTypeName" />
+    <property role="3GE5qa" value="expressions.names" />
+    <node concept="3clFbS" id="1KdBIfXKTYZ" role="18ibNy">
+      <node concept="3clFbJ" id="1KdBIfXKTZ5" role="3cqZAp">
+        <node concept="3fqX7Q" id="1KdBIfXKV0d" role="3clFbw">
+          <node concept="2OqwBi" id="1KdBIfXKV0f" role="3fr31v">
+            <node concept="2OqwBi" id="1KdBIfXKV0g" role="2Oq$k0">
+              <node concept="1YBJjd" id="1KdBIfXKV0h" role="2Oq$k0">
+                <ref role="1YBMHb" node="1KdBIfXKTZ1" resolve="qualifiedTypeName" />
+              </node>
+              <node concept="2qgKlT" id="1KdBIfXKV0i" role="2OqNvi">
+                <ref role="37wK5l" to="bqjt:4jcHaHwBVih" resolve="getTarget" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="1KdBIfXKV0j" role="2OqNvi">
+              <node concept="chp4Y" id="1KdBIfXKV0k" role="cj9EA">
+                <ref role="cht4Q" to="28lk:2SMO68r$0GZ" resolve="ClassifierDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1KdBIfXKTZ7" role="3clFbx">
+          <node concept="2MkqsV" id="1KdBIfXKV16" role="3cqZAp">
+            <node concept="Xl_RD" id="1KdBIfXKV1i" role="2MkJ7o">
+              <property role="Xl_RC" value="Can only reference classifier definitions as types" />
+            </node>
+            <node concept="1YBJjd" id="1KdBIfXKV2a" role="1urrMF">
+              <ref role="1YBMHb" node="1KdBIfXKTZ1" resolve="qualifiedTypeName" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1KdBIfXKTZ1" role="1YuTPh">
+      <property role="TrG5h" value="qualifiedTypeName" />
+      <ref role="1YaFvo" to="28lk:1KdBIfXINNb" resolve="QualifiedTypeName" />
+    </node>
+  </node>
 </model>
 

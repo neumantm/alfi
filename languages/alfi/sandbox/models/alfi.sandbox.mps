@@ -19,7 +19,9 @@
     </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
-      <concept id="2674824929518763010" name="alfi.structure.Expression" flags="ng" index="_jtWo" />
+      <concept id="2674824929519927758" name="alfi.structure.NameExpression" flags="ng" index="_uYbk">
+        <child id="2674824929519927759" name="name" index="_uYbl" />
+      </concept>
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
@@ -39,12 +41,20 @@
         <child id="7144803224883131093" name="typeName" index="327w9S" />
         <child id="7144803224883131091" name="expression" index="327w9Y" />
       </concept>
+      <concept id="7144803224891645267" name="alfi.structure.CastExpression" flags="ng" index="32B2RY">
+        <child id="7144803224891645268" name="typeName" index="32B2RT" />
+      </concept>
+      <concept id="7144803224891528095" name="alfi.structure.UnaryExpression" flags="ng" index="32BIcM">
+        <child id="7144803224891528117" name="operand" index="32BIco" />
+      </concept>
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
       </concept>
+      <concept id="2021446509810892642" name="alfi.structure.AnyTypeName" flags="ng" index="3xHE61" />
+      <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
     </language>
   </registry>
   <node concept="3mGtxK" id="1KdBIfXrUKk">
@@ -57,17 +67,37 @@
           <node concept="32T38h" id="1KdBIfXs8Ie" role="327w9Y">
             <property role="32T38g" value="1" />
           </node>
-          <node concept="_vnHb" id="1KdBIfXrUKx" role="327w9S">
-            <node concept="2RqM1Q" id="1KdBIfXs8IZ" role="_vnH8">
+          <node concept="3xHE8C" id="1KdBIfXKQR0" role="327w9S">
+            <node concept="2RqM1Q" id="1KdBIfXKQR2" role="_vnH8">
               <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
             </node>
           </node>
         </node>
         <node concept="327OUb" id="1KdBIfX_t9h" role="PCHzz">
           <property role="TrG5h" value="asd" />
-          <node concept="_jtWo" id="1KdBIfX_t9j" role="327w9Y" />
-          <node concept="_vnHb" id="1KdBIfX_t9l" role="327w9S">
-            <node concept="2RqM1Q" id="1KdBIfX_t9n" role="_vnH8" />
+          <node concept="32B2RY" id="1KdBIfXJH86" role="327w9Y">
+            <node concept="_uYbk" id="1KdBIfXJH95" role="32BIco">
+              <node concept="_vnHb" id="1KdBIfXJH97" role="_uYbl">
+                <node concept="2RqM1Q" id="1KdBIfXJH99" role="_vnH8">
+                  <ref role="2RqM1R" node="1KdBIfXrUKt" resolve="aasd" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xHE61" id="1KdBIfXJHaT" role="32B2RT" />
+          </node>
+          <node concept="3xHE8C" id="1KdBIfXKQS4" role="327w9S">
+            <node concept="2RqM1Q" id="1KdBIfXKQS6" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfUD" resolve="Alf" />
+            </node>
+            <node concept="2RqM1Q" id="1KdBIfXLcuK" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfUK" resolve="Library" />
+            </node>
+            <node concept="2RqM1Q" id="1KdBIfXLcv4" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfV9" resolve="PrimitiveTypes" />
+            </node>
+            <node concept="2RqM1Q" id="1KdBIfXLcwg" role="_vnH8">
+              <ref role="2RqM1R" to="gkn4:1KdBIfXrfWq" resolve="Real" />
+            </node>
           </node>
         </node>
       </node>
