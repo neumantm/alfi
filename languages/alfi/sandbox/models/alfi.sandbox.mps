@@ -39,10 +39,10 @@
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
       </concept>
-      <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
+      <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT" />
       <concept id="7144803224892162748" name="alfi.structure.DecimalLiteralExpression" flags="ng" index="32T38h">
         <property id="7144803224892162749" name="valueText" index="32T38g" />
       </concept>
@@ -75,7 +75,7 @@
     <node concept="PCHHj" id="3Ud70gdnBsW" role="3mGtxP">
       <property role="TrG5h" value="Test1" />
       <node concept="PCHzy" id="3Ud70gdnBsZ" role="PCHGa">
-        <node concept="PDbRn" id="3Ud70gdnBwd" role="PCHzz" />
+        <node concept="32G6VT" id="7GHN9f$xytm" role="PCHzz" />
       </node>
       <node concept="3xR696" id="3Ud70gdnBt3" role="PCHHv">
         <property role="3xR695" value="1KdBIfXPktw/in" />
