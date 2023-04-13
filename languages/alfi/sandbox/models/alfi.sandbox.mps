@@ -139,6 +139,10 @@
         <property role="PCHHn" value="6OepWIVA92M/private" />
         <node concept="PCHzy" id="7GHN9f$OR1A" role="PCHGa" />
       </node>
+      <node concept="2qCqA3" id="7GHN9f_8j2B" role="PCHHv">
+        <property role="TrG5h" value="foo" />
+        <property role="PCHHq" value="true" />
+      </node>
     </node>
     <node concept="3mGtyY" id="7GHN9f$BVWC" role="3mGtxR">
       <node concept="_vnHb" id="7GHN9f$BVWD" role="$kHGj">
@@ -179,6 +183,22 @@
           <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="Test2" />
         </node>
         <node concept="2RqM1Q" id="7GHN9f$CQqp" role="_vnH8">
+          <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3mGtxK" id="7GHN9f_96RA">
+    <property role="3GE5qa" value="Test2.Test2a" />
+    <node concept="2qCqA3" id="7GHN9f_96R_" role="3mGtxP">
+      <property role="TrG5h" value="foo" />
+    </node>
+    <node concept="3mGtyY" id="7GHN9f_96RE" role="3mGtxR">
+      <node concept="_vnHb" id="7GHN9f_96RB" role="$kHGj">
+        <node concept="2RqM1Q" id="7GHN9f_96RC" role="_vnH8">
+          <ref role="2RqM1R" node="7GHN9f$BVWx" resolve="Test2" />
+        </node>
+        <node concept="2RqM1Q" id="7GHN9f_96RD" role="_vnH8">
           <ref role="2RqM1R" node="7GHN9f$BVWI" resolve="Test2a" />
         </node>
       </node>
