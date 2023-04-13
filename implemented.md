@@ -117,7 +117,8 @@ Limitations are listed as subpoints of the chapters.
   - [ ] 10.4.7 Signals
   - [x] 10.4.8 Activities
     - not template parameters
-    - no editor for parameters and return parameter
+    - parameters cannot have comments or stereotypes
+    - parameters cannot have both the nonunique and ordered flags simultaneously (use the equivalent sequence flag)
 - [ ] 10.5 Features
 
 ## Standard Model Library (11)

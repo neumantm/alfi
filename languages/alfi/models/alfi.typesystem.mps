@@ -1880,7 +1880,7 @@
         <node concept="3clFbS" id="1KdBIfWOXSt" role="3clFbx">
           <node concept="2MkqsV" id="1KdBIfWOXSu" role="3cqZAp">
             <node concept="Xl_RD" id="1KdBIfWOXSv" role="2MkJ7o">
-              <property role="Xl_RC" value="Cannot not import a namespace defined in the same unit" />
+              <property role="Xl_RC" value="Cannot import a namespace defined in the same unit" />
             </node>
             <node concept="1YBJjd" id="1KdBIfWOXSw" role="1urrMF">
               <ref role="1YBMHb" node="1KdBIfWOXS5" resolve="importDeclaration" />
