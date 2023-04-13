@@ -691,7 +691,6 @@
             </node>
           </node>
         </node>
-        <node concept="VPM3Z" id="6cBsaQxnVmS" role="3F10Kt" />
       </node>
       <node concept="PMmxH" id="2SMO68rAHek" role="3EZMnx">
         <ref role="PMmxG" node="2SMO68r$0ya" resolve="Block_BlockStatements_EC" />
@@ -702,7 +701,6 @@
       <node concept="3F0ifn" id="2SMO68rAHen" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <ref role="1k5W1q" to="tpen:hXb$V4T" resolve="RightBracket" />
-        <node concept="VPM3Z" id="6cBsaQxnVpt" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="2SMO68rAHep" role="2iSdaV" />
     </node>
