@@ -76,6 +76,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
       </concept>
@@ -3415,6 +3416,26 @@
           <node concept="3F0ifn" id="1KdBIfWXClH" role="2czzBI">
             <property role="3F0ifm" value="" />
           </node>
+          <node concept="pkWqt" id="7GHN9f_47nB" role="pqm2j">
+            <node concept="3clFbS" id="7GHN9f_47nC" role="2VODD2">
+              <node concept="3clFbF" id="7GHN9f_47o1" role="3cqZAp">
+                <node concept="3eOSWO" id="7GHN9f_4dth" role="3clFbG">
+                  <node concept="3cmrfG" id="7GHN9f_4dtl" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="7GHN9f_49By" role="3uHU7B">
+                    <node concept="2OqwBi" id="7GHN9f_47Cy" role="2Oq$k0">
+                      <node concept="pncrf" id="7GHN9f_47o0" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="7GHN9f_47YP" role="2OqNvi">
+                        <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+                      </node>
+                    </node>
+                    <node concept="34oBXx" id="7GHN9f_4c41" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3F0A7n" id="6OepWIVAgwt" role="3EZMnx">
           <ref role="1NtTu8" to="28lk:2SMO68r$0GP" resolve="visibility" />
@@ -3560,6 +3581,37 @@
         </node>
         <node concept="2ZThk1" id="6OepWIVBpWN" role="2ZBHrp">
           <ref role="2ZWj4r" to="28lk:6OepWIVA92D" resolve="Visibility" />
+        </node>
+      </node>
+      <node concept="IWgqT" id="7GHN9f_2jib" role="1Qtc8A">
+        <node concept="1hCUdq" id="7GHN9f_2jid" role="1hCUd6">
+          <node concept="3clFbS" id="7GHN9f_2jif" role="2VODD2">
+            <node concept="3clFbF" id="7GHN9f_2jje" role="3cqZAp">
+              <node concept="Xl_RD" id="7GHN9f_2jjd" role="3clFbG">
+                <property role="Xl_RC" value="@" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="7GHN9f_2jih" role="IWgqQ">
+          <node concept="3clFbS" id="7GHN9f_2jij" role="2VODD2">
+            <node concept="3clFbF" id="7GHN9f_2jjC" role="3cqZAp">
+              <node concept="2OqwBi" id="7GHN9f_2lEy" role="3clFbG">
+                <node concept="2OqwBi" id="7GHN9f_2jKB" role="2Oq$k0">
+                  <node concept="7Obwk" id="7GHN9f_2jjB" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7GHN9f_2k24" role="2OqNvi">
+                    <ref role="3TtcxE" to="28lk:1KdBIfWTSM6" resolve="stereotypeAnnotation" />
+                  </node>
+                </node>
+                <node concept="2DeJg1" id="7GHN9f_2nj1" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="mvV$s" id="7GHN9f_0$QC" role="1Qtc8A">
+        <node concept="A1WHr" id="7GHN9f_0$Ro" role="A14EM">
+          <ref role="2ZyFGn" to="28lk:2SMO68r_Hx$" resolve="DocumentedElement" />
         </node>
       </node>
     </node>
