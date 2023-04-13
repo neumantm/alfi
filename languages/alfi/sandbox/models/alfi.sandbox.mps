@@ -39,6 +39,7 @@
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
       </concept>
+      <concept id="3328952194368433589" name="alfi.structure.SyntaxElement" flags="ng" index="PDbRn" />
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
       </concept>
@@ -120,6 +121,7 @@
                 </node>
               </node>
             </node>
+            <node concept="PDbRn" id="7GHN9f_8iwW" role="PCHzz" />
           </node>
         </node>
       </node>
