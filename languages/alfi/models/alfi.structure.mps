@@ -166,6 +166,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2SMO68r$0GM" resolve="NamespaceMember" />
     </node>
+    <node concept="PrWs8" id="7GHN9f$_$PC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2SMO68r$0GZ">
     <property role="EcuMT" value="3328952194368015167" />
@@ -1456,9 +1459,6 @@
     <property role="TrG5h" value="DataTypeDefinition" />
     <property role="34LRSv" value="datatype" />
     <ref role="1TJDcQ" node="2SMO68r$0GZ" resolve="ClassifierDefinition" />
-    <node concept="PrWs8" id="1KdBIfXq3yj" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
   </node>
   <node concept="PlHQZ" id="1KdBIfXINz6">
     <property role="EcuMT" value="2021446509810890950" />
@@ -1532,9 +1532,6 @@
       <property role="IQ2nx" value="2021446509811517488" />
       <property role="TrG5h" value="isNonunique" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="1KdBIfXQcxT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="1KdBIfXLfIO">
