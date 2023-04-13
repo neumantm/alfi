@@ -131,6 +131,7 @@ During the transformation to a target language these stubs will be replaced by a
 - [x] 11.2 ~~ActionLanguage Profile~~ (not implemented in alfi as alfi is not a UML tool)
 - [x] 11.3 Primitive Types
 - [ ] 11.4 Primitive Behaviors
-- [ ] 11.5 Basic Input and Output
+- [x] 11.5 Basic Input and Output
+  - Only ReadLine and WriteLine and without errorStatus parameter
 - [ ] 11.6 Collection Functions
 - [ ] 11.7 Collection Classes
