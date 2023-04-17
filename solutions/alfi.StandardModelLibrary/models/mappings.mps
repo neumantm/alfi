@@ -7,6 +7,8 @@
   <imports>
     <import index="gkn4" ref="r:fae4a196-11c4-4868-9ebd-1379c8e56907(alfStandardModelLibrary)" />
     <import index="zrzc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library(alfi.StandardModelLibrary/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="lodc" ref="e9b40a72-6930-481d-bdce-a0a866bf715e/java:alf.library.primitivebehaviors(alfi.StandardModelLibrary/)" />
   </imports>
   <registry>
     <language id="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3" name="alfi.PrimitiveMapping">
@@ -32,24 +34,51 @@
     </node>
     <node concept="3HHQsX" id="2X39vz36fVD" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
+      <ref role="3HHQyS" to="wyt6:~Boolean" resolve="Boolean" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVH" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+      <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVM" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfWN" resolve="Natural" />
+      <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVS" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfWq" resolve="Real" />
+      <ref role="3HHQyS" to="wyt6:~Double" resolve="Double" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fVZ" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfVO" resolve="String" />
+      <ref role="3HHQyS" to="wyt6:~String" resolve="String" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fW7" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfW5" resolve="UnlimitedNatural" />
+      <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
     </node>
     <node concept="3HHQsX" id="2X39vz36fWg" role="3HHZ2s">
       <ref role="3HHQsK" to="gkn4:1KdBIfXrfXw" resolve="BitString" />
+      <ref role="3HHQyS" to="wyt6:~Integer" resolve="Integer" />
+    </node>
+    <node concept="3HHQsX" id="2X39vz3a_2f" role="3HHZ2s">
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q48D" resolve="ToString" />
+      <ref role="3HHQyS" to="lodc:~BooleanFunctions.ToString(java.lang.Boolean)" resolve="ToString" />
+    </node>
+    <node concept="3HHQsX" id="2X39vz3a_2_" role="3HHZ2s">
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4ae" resolve="ToString" />
+      <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+    </node>
+    <node concept="3HHQsX" id="2X39vz3a_2L" role="3HHZ2s">
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q4a$" resolve="ToString" />
+      <ref role="3HHQyS" to="lodc:~RealFunctions.ToString(java.lang.Double)" resolve="ToString" />
+    </node>
+    <node concept="3HHQsX" id="2X39vz3a_2Y" role="3HHZ2s">
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49y" resolve="ToString" />
+      <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
+    </node>
+    <node concept="3HHQsX" id="2X39vz3a_3c" role="3HHZ2s">
+      <ref role="3HHQsK" to="gkn4:7GHN9f$Q49c" resolve="ToString" />
+      <ref role="3HHQyS" to="lodc:~IntegerFunctions.ToString(java.lang.Integer)" resolve="ToString" />
     </node>
   </node>
 </model>

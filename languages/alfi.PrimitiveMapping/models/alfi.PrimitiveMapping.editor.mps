@@ -9,7 +9,6 @@
   <imports>
     <import index="sk9k" ref="r:e62a0cfe-cc94-4639-90f1-a04b0a05f214(alfi.PrimitiveMapping.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -37,7 +36,6 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -114,9 +112,19 @@
       <node concept="1iCGBv" id="2X39vz2X4PU" role="3EZMnx">
         <ref role="1NtTu8" to="sk9k:2X39vz2X4P0" resolve="to" />
         <node concept="1sVBvm" id="2X39vz2X4PW" role="1sWHZn">
-          <node concept="3F0A7n" id="2X39vz2X4Zl" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3SHvHV" id="2X39vz3a_fe" role="2wV5jI">
+            <node concept="1NMggl" id="2X39vz3a_fh" role="2N1_XE">
+              <node concept="3clFbS" id="2X39vz3a_fi" role="2VODD2">
+                <node concept="3clFbF" id="2X39vz3a_fD" role="3cqZAp">
+                  <node concept="2OqwBi" id="2X39vz3a_s2" role="3clFbG">
+                    <node concept="1NM5Ph" id="2X39vz3a_fC" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2X39vz3a_Ra" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
