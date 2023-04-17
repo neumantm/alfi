@@ -83,13 +83,9 @@
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
         <child id="7858332524534022076" name="namespaceDeclaration" index="3mGtxR" />
-        <child id="2021446509794681919" name="imports" index="3wNBFs" />
       </concept>
       <concept id="7858332524534022005" name="alfi.structure.NamespaceDeclaration" flags="ng" index="3mGtyY">
         <child id="4957535937981476792" name="namespace" index="$kHGj" />
-      </concept>
-      <concept id="2021446509794411996" name="alfi.structure.ImportDeclaration" flags="ng" index="3wG_GZ">
-        <child id="2021446509794422890" name="referent" index="3wGAU9" />
       </concept>
       <concept id="2021446509810892642" name="alfi.structure.AnyTypeName" flags="ng" index="3xHE61" />
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
@@ -263,13 +259,6 @@
             <node concept="3xMmbk" id="7GHN9f_nrWd" role="3xLlrW" />
             <node concept="hh2MY" id="7GHN9f_nrWf" role="hh1p4" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3wG_GZ" id="7GHN9f_kIY0" role="3wNBFs">
-      <node concept="_vnHb" id="7GHN9f_kIY1" role="3wGAU9">
-        <node concept="2RqM1Q" id="7GHN9f_kIY2" role="_vnH8">
-          <ref role="2RqM1R" to="gkn4:1KdBIfXrfUD" resolve="Alf" />
         </node>
       </node>
     </node>
