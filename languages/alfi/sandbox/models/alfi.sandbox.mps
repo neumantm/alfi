@@ -218,7 +218,6 @@
     </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f$BVWv">
-    <property role="3GE5qa" value="" />
     <node concept="2qCqA3" id="7GHN9f$BVWx" role="3mGtxP">
       <property role="TrG5h" value="Test2" />
       <node concept="2qCqA3" id="7GHN9f$BVW$" role="PCHHv">
@@ -413,7 +412,6 @@
     </node>
   </node>
   <node concept="3mGtxK" id="7GHN9f_xd8e">
-    <property role="3GE5qa" value="" />
     <node concept="2qCqA3" id="7GHN9f_xd8g" role="3mGtxP">
       <property role="TrG5h" value="Foo" />
       <node concept="2qCqA3" id="2X39vz3bZzr" role="PCHHv">

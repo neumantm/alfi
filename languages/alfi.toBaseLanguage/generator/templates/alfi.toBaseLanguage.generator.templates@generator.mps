@@ -436,6 +436,7 @@
       <concept id="7400021826774799413" name="jetbrains.mps.lang.smodel.structure.NodePointerExpression" flags="ng" index="2tJFMh">
         <child id="7400021826774799510" name="ref" index="2tJFKM" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -7100,8 +7101,36 @@
                     <node concept="3clFbS" id="4Vswoj0Tsxg" role="3clFbx">
                       <node concept="2xdQw9" id="4Vswoj0Ttgo" role="3cqZAp">
                         <property role="2xdLsb" value="gZ5fh_4/error" />
-                        <node concept="Xl_RD" id="4Vswoj0Ttgq" role="9lYJi">
-                          <property role="Xl_RC" value="Original input of root node is not a NamespaceMember" />
+                        <node concept="3cpWs3" id="5$jxwEABfto" role="9lYJi">
+                          <node concept="Xl_RD" id="5$jxwEABg5O" role="3uHU7w">
+                            <property role="Xl_RC" value="]" />
+                          </node>
+                          <node concept="3cpWs3" id="5$jxwEABb_v" role="3uHU7B">
+                            <node concept="3cpWs3" id="5$jxwEAB7Ou" role="3uHU7B">
+                              <node concept="3cpWs3" id="5$jxwEAB2kR" role="3uHU7B">
+                                <node concept="Xl_RD" id="4Vswoj0Ttgq" role="3uHU7B">
+                                  <property role="Xl_RC" value="Original input of root node is not a NamespaceMember:" />
+                                </node>
+                                <node concept="2OqwBi" id="5$jxwEAB5u1" role="3uHU7w">
+                                  <node concept="37vLTw" id="5$jxwEAB4CQ" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="4Vswoj0RX36" resolve="node" />
+                                  </node>
+                                  <node concept="2yIwOk" id="5$jxwEAB718" role="2OqNvi" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="5$jxwEAB8nX" role="3uHU7w">
+                                <property role="Xl_RC" value=" [" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="5$jxwEABcYL" role="3uHU7w">
+                              <node concept="37vLTw" id="5$jxwEABc9a" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4Vswoj0RX36" resolve="node" />
+                              </node>
+                              <node concept="2qgKlT" id="5$jxwEABe_r" role="2OqNvi">
+                                <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                       <node concept="3cpWs6" id="4Vswoj0TuA7" role="3cqZAp" />
