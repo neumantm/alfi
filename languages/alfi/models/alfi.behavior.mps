@@ -4242,9 +4242,7 @@
         <node concept="3clFbJ" id="5Jdbbz9x$95" role="3cqZAp">
           <node concept="3clFbS" id="5Jdbbz9x$97" role="3clFbx">
             <node concept="3cpWs6" id="5Jdbbz9x$HE" role="3cqZAp">
-              <node concept="Xl_RD" id="5Jdbbz9x$SY" role="3cqZAk">
-                <property role="Xl_RC" value="" />
-              </node>
+              <node concept="10Nm6u" id="2HakVwV0Pkr" role="3cqZAk" />
             </node>
           </node>
           <node concept="2OqwBi" id="5Jdbbz9x$ob" role="3clFbw">
