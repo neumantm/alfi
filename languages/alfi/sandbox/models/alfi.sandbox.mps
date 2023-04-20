@@ -17,14 +17,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
-        <property id="155656958578482949" name="value" index="3oM_SC" />
-      </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
-        <child id="2535923850359271783" name="elements" index="1PaTwD" />
-      </concept>
-    </language>
     <language id="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703" name="alfi">
       <concept id="6254876434755085380" name="alfi.structure.SequenceFlag" flags="ng" index="hh2MY" />
       <concept id="8280419611661851712" name="alfi.structure.PackageDefinition" flags="ng" index="2qCqA3" />
@@ -34,8 +26,6 @@
       <concept id="2674824929518763027" name="alfi.structure.ExpressionStatement" flags="ng" index="_jtW9">
         <child id="2674824929518763028" name="expression" index="_jtWe" />
       </concept>
-      <concept id="2674824929518763010" name="alfi.structure.Expression" flags="ng" index="_jtWo" />
-      <concept id="2674824929518763012" name="alfi.structure.BooleanLiteralExpression" flags="ng" index="_jtWu" />
       <concept id="2674824929519882505" name="alfi.structure.BehaviorInvocationExpression" flags="ng" index="_uF8j">
         <child id="2674824929519882506" name="target" index="_uF8g" />
       </concept>
@@ -51,9 +41,6 @@
       <concept id="2674824929519835217" name="alfi.structure.QualifiedName" flags="ng" index="_vnHb">
         <child id="2674824929519835218" name="names" index="_vnH8" />
       </concept>
-      <concept id="520354255175379373" name="alfi.structure.DocumentedElementCommentContent" flags="ng" index="IbWbt">
-        <child id="520354255175379374" name="documentationLines" index="IbWbu" />
-      </concept>
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
       </concept>
@@ -67,9 +54,6 @@
       </concept>
       <concept id="3328952194368015164" name="alfi.structure.NamespaceDefinition" flags="ng" index="PCHHu">
         <child id="3328952194368015165" name="ownedMember" index="PCHHv" />
-      </concept>
-      <concept id="3328952194367901068" name="alfi.structure.DocumentedElement" flags="ng" index="PJ9RI">
-        <child id="520354255175429050" name="documentation" index="I883a" />
       </concept>
       <concept id="8550147057602730244" name="alfi.structure.NameReference" flags="ng" index="2RqM1Q">
         <reference id="8550147057602730245" name="target" index="2RqM1R" />
@@ -86,10 +70,6 @@
         <child id="7144803224883131093" name="typeName" index="327w9S" />
         <child id="7144803224883131091" name="expression" index="327w9Y" />
       </concept>
-      <concept id="7144803224891557445" name="alfi.structure.BooleanUnaryExpression" flags="ng" index="32BnrC" />
-      <concept id="7144803224891528095" name="alfi.structure.UnaryExpression" flags="ng" index="32BIcM">
-        <child id="7144803224891528117" name="operand" index="32BIco" />
-      </concept>
       <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
         <child id="8875975376183143672" name="expression" index="2vFQ1F" />
       </concept>
@@ -102,14 +82,9 @@
       <concept id="7858332524534022075" name="alfi.structure.Unit" flags="ng" index="3mGtxK">
         <child id="7858332524534022078" name="namespaceDefinition" index="3mGtxP" />
         <child id="7858332524534022076" name="namespaceDeclaration" index="3mGtxR" />
-        <child id="2021446509794681919" name="imports" index="3wNBFs" />
       </concept>
       <concept id="7858332524534022005" name="alfi.structure.NamespaceDeclaration" flags="ng" index="3mGtyY">
         <child id="4957535937981476792" name="namespace" index="$kHGj" />
-      </concept>
-      <concept id="2021446509794411996" name="alfi.structure.ImportDeclaration" flags="ng" index="3wG_GZ">
-        <property id="2021446509794422943" name="isPackageImport" index="3wGATW" />
-        <child id="2021446509794422890" name="referent" index="3wGAU9" />
       </concept>
       <concept id="2021446509810892642" name="alfi.structure.AnyTypeName" flags="ng" index="3xHE61" />
       <concept id="2021446509810891979" name="alfi.structure.QualifiedTypeName" flags="ng" index="3xHE8C" />
@@ -125,7 +100,6 @@
     </language>
   </registry>
   <node concept="3mGtxK" id="7GHN9f$BVVJ">
-    <property role="3GE5qa" value="" />
     <node concept="PCHHj" id="7GHN9f$BVVL" role="3mGtxP">
       <property role="TrG5h" value="Test1" />
       <node concept="PCHzy" id="7GHN9f$BVW0" role="PCHGa">
@@ -425,14 +399,17 @@
           <node concept="PCHzy" id="2X39vz3bZFu" role="PCHGa">
             <node concept="327OUb" id="7X0jqo9zmXS" role="PCHzz">
               <property role="TrG5h" value="a" />
-              <node concept="_jtWo" id="7X0jqo9zmXU" role="327w9Y" />
+              <node concept="32T38h" id="1hFxxc0Zce1" role="327w9Y">
+                <property role="32T38g" value="1" />
+              </node>
               <node concept="3xHE8C" id="7X0jqo9zn7q" role="327w9S">
-                <node concept="2RqM1Q" id="7X0jqo9zn7s" role="_vnH8" />
+                <node concept="2RqM1Q" id="7X0jqo9zn7s" role="_vnH8">
+                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfVB" resolve="Integer" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="PCHHj" id="2X39vz3c05K" role="PCHHv" />
       </node>
     </node>
   </node>
@@ -465,58 +442,6 @@
         </node>
         <node concept="2RqM1Q" id="2X39vz3bZzD" role="_vnH8">
           <ref role="2RqM1R" node="2X39vz3bZzt" resolve="Foo1" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3mGtxK" id="2X39vz3bZ$5">
-    <property role="3GE5qa" value="Foo.Foo2" />
-    <node concept="PCHHj" id="2X39vz3bZ$3" role="3mGtxP">
-      <property role="TrG5h" value="Foo2a" />
-      <node concept="PCHzy" id="2X39vz3bZ$4" role="PCHGa">
-        <node concept="327OUb" id="2X39vz3bZ_q" role="PCHzz">
-          <property role="TrG5h" value="asd" />
-          <node concept="_jtWu" id="2X39vz3bZA9" role="327w9Y" />
-          <node concept="3xHE8C" id="2X39vz3bZ__" role="327w9S">
-            <node concept="2RqM1Q" id="2X39vz3bZ_B" role="_vnH8">
-              <ref role="2RqM1R" to="gkn4:1KdBIfXrfVu" resolve="Boolean" />
-            </node>
-          </node>
-        </node>
-        <node concept="32G6VT" id="2X39vz3bZCt" role="PCHzz">
-          <node concept="32BnrC" id="2X39vz3bZCN" role="2vFQ1F">
-            <node concept="_jtWu" id="2X39vz3bZCR" role="32BIco" />
-          </node>
-        </node>
-      </node>
-      <node concept="IbWbt" id="2X39vz3bZ_f" role="I883a">
-        <node concept="1PaTwC" id="2X39vz3bZ_g" role="IbWbu">
-          <node concept="3oM_SD" id="2X39vz3bZ_h" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="3xR696" id="2X39vz3bZBP" role="NkNyt">
-        <property role="3xR695" value="3Ud70gdvRyt/return" />
-        <property role="TrG5h" value="__return__" />
-        <node concept="3xHE61" id="2X39vz3bZC6" role="3xMlr6" />
-      </node>
-    </node>
-    <node concept="3mGtyY" id="2X39vz3bZ$9" role="3mGtxR">
-      <node concept="_vnHb" id="2X39vz3bZ$6" role="$kHGj">
-        <node concept="2RqM1Q" id="2X39vz3bZ$7" role="_vnH8">
-          <ref role="2RqM1R" node="7GHN9f_xd8g" resolve="Foo" />
-        </node>
-        <node concept="2RqM1Q" id="2X39vz3bZ$8" role="_vnH8">
-          <ref role="2RqM1R" node="2X39vz3bZzX" resolve="Foo2" />
-        </node>
-      </node>
-    </node>
-    <node concept="3wG_GZ" id="2X39vz3bZ$p" role="3wNBFs">
-      <property role="3wGATW" value="true" />
-      <node concept="_vnHb" id="2X39vz3bZ$q" role="3wGAU9">
-        <node concept="2RqM1Q" id="2X39vz3bZ_3" role="_vnH8">
-          <ref role="2RqM1R" to="gkn4:1KdBIfXrfUD" resolve="Alf" />
         </node>
       </node>
     </node>

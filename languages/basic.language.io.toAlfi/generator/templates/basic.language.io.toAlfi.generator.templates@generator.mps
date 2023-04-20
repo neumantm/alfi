@@ -58,7 +58,6 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -115,7 +114,6 @@
       <ref role="30HIoZ" to="j1ci:29GfPexx0g_" resolve="BPrintStatement" />
       <node concept="1Koe21" id="4Vswoj108AD" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj108AJ" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj108AN" role="3mGtxP">
             <property role="TrG5h" value="BPrintStatementContext" />
             <node concept="PCHzy" id="4Vswoj108AQ" role="PCHGa">
@@ -157,7 +155,6 @@
       <ref role="30HIoZ" to="j1ci:29GfPexxSQL" resolve="BInputExpression" />
       <node concept="1Koe21" id="4Vswoj108T4" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj108Ta" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj108Tb" role="3mGtxP">
             <property role="TrG5h" value="BInputExpressionContext" />
             <node concept="PCHzy" id="4Vswoj108Tc" role="PCHGa">
@@ -181,7 +178,6 @@
       <ref role="30HIoZ" to="j1ci:6iIWuF8euD4" resolve="BBooleanToStringExpression" />
       <node concept="1Koe21" id="4Vswoj1096V" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj10971" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj10972" role="3mGtxP">
             <property role="TrG5h" value="BInputExpressionContext" />
             <node concept="PCHzy" id="4Vswoj10973" role="PCHGa">
@@ -226,7 +222,6 @@
       <ref role="30HIoZ" to="j1ci:6iIWuF8excX" resolve="BDoubleToStringExpression" />
       <node concept="1Koe21" id="4Vswoj109ft" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj109fz" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj109f$" role="3mGtxP">
             <property role="TrG5h" value="BInputExpressionContext" />
             <node concept="PCHzy" id="4Vswoj109f_" role="PCHGa">
@@ -273,7 +268,6 @@
       <ref role="30HIoZ" to="j1ci:6iIWuF8eyTB" resolve="BIntegerToStringExpression" />
       <node concept="1Koe21" id="4Vswoj109sP" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj109sV" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj109sW" role="3mGtxP">
             <property role="TrG5h" value="BInputExpressionContext" />
             <node concept="PCHzy" id="4Vswoj109sX" role="PCHGa">

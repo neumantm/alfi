@@ -58,7 +58,6 @@
     </language>
   </registry>
   <node concept="3mGtxK" id="1KdBIfXrfUx">
-    <property role="3GE5qa" value="" />
     <node concept="2qCqA3" id="1KdBIfXrfUD" role="3mGtxP">
       <property role="TrG5h" value="Alf" />
       <node concept="3wUxaT" id="1KdBIfXrfUG" role="3wUx9_">

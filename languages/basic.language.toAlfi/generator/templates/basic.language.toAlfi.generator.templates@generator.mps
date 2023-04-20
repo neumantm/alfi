@@ -110,7 +110,6 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -142,6 +141,9 @@
       <concept id="2674824929519835220" name="alfi.structure.NameBinding" flags="ng" index="_vnHe" />
       <concept id="3328952194368014464" name="alfi.structure.Block" flags="ng" index="PCHzy">
         <child id="3328952194368014465" name="statements" index="PCHzz" />
+      </concept>
+      <concept id="3328952194368015154" name="alfi.structure.NamespaceMember" flags="ng" index="PCHHg">
+        <property id="3328952194368015157" name="visibility" index="PCHHn" />
       </concept>
       <concept id="3328952194368015153" name="alfi.structure.ActivityDefinition" flags="ng" index="PCHHj">
         <child id="3328952194368015208" name="body" index="PCHGa" />
@@ -757,7 +759,6 @@
       <ref role="30HIoZ" to="rav:6yAr3FnMBKC" resolve="BIntegerType" />
       <node concept="1Koe21" id="4Vswoj104JQ" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj104L7" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj104Mo" role="3mGtxP">
             <property role="TrG5h" value="BIntegerTypeContext" />
             <node concept="PCHzy" id="4Vswoj104W3" role="PCHGa">
@@ -782,7 +783,6 @@
       <ref role="30HIoZ" to="rav:6yAr3FnMBKD" resolve="BStringType" />
       <node concept="1Koe21" id="4Vswoj1058r" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj1059I" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj1059J" role="3mGtxP">
             <property role="TrG5h" value="BStringTypeContext" />
             <node concept="PCHzy" id="4Vswoj1059K" role="PCHGa">
@@ -807,7 +807,6 @@
       <ref role="30HIoZ" to="rav:6yAr3FnMBKE" resolve="BBooleanType" />
       <node concept="1Koe21" id="4Vswoj105hr" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj105hx" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj105hy" role="3mGtxP">
             <property role="TrG5h" value="BBooleanTypeContext" />
             <node concept="PCHzy" id="4Vswoj105hz" role="PCHGa">
@@ -830,7 +829,6 @@
       <ref role="30HIoZ" to="rav:1vcXQyrxgXC" resolve="BDoubleType" />
       <node concept="1Koe21" id="4Vswoj105to" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj105uF" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj105uG" role="3mGtxP">
             <property role="TrG5h" value="BDoubleTypeContext" />
             <node concept="PCHzy" id="4Vswoj105uH" role="PCHGa">
@@ -857,7 +855,6 @@
       <ref role="30HIoZ" to="rav:p58tcV_Adp" resolve="BVariableReference" />
       <node concept="1Koe21" id="4Vswoj105NE" role="1lVwrX">
         <node concept="3mGtxK" id="4Vswoj105OX" role="1Koe22">
-          <property role="3GE5qa" value="" />
           <node concept="PCHHj" id="4Vswoj105Qe" role="3mGtxP">
             <property role="TrG5h" value="BVariableReferenceContext" />
             <node concept="PCHzy" id="4Vswoj1062j" role="PCHGa">
@@ -980,12 +977,12 @@
     </node>
   </node>
   <node concept="3mGtxK" id="4Vswoj0ZZJR">
-    <property role="3GE5qa" value="" />
     <node concept="n94m4" id="4Vswoj0ZZJT" role="lGtFl">
       <ref role="n9lRv" to="rav:7FEM1KfpoUa" resolve="BWorkbook" />
     </node>
     <node concept="PCHHj" id="4Vswoj10049" role="3mGtxP">
       <property role="TrG5h" value="map_BWorkbook" />
+      <property role="PCHHn" value="6OepWIVA92I/package" />
       <node concept="17Uvod" id="4Vswoj100GW" role="lGtFl">
         <property role="2qtEX9" value="name" />
         <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

@@ -58,7 +58,6 @@
   <dependencies>
     <dependency reexport="false">bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
   </dependencies>
   <languageVersions>
@@ -100,7 +99,6 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="bf897046-1e4e-4c49-b9d6-a7ab6d3f8703(alfi)" version="0" />
     <module reference="05b98dee-d1dd-4a0e-90e8-7aa649a2d7e3(alfi.PrimitiveMapping)" version="0" />
-    <module reference="d0e1230a-72e3-4b6b-88f2-98d924f7de11(alfi.toBaseLanguage)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />

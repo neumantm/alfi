@@ -28,4 +28,5 @@ package Bar {
     public activity W2() {}
   }
   public package Some;
+  public activity Boo();
 }

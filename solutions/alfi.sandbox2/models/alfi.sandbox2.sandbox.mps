@@ -92,27 +92,6 @@
         <child id="7144803224883955094" name="finalClause" index="32onkV" />
         <child id="7144803224883864292" name="nonFinalClauses" index="32oX99" />
       </concept>
-      <concept id="7144803224889925327" name="alfi.structure.InferredTypeLoopVariableDefinition" flags="ng" index="32xATy">
-        <child id="7144803224889925328" name="expression" index="32xATX" />
-      </concept>
-      <concept id="7144803224889925323" name="alfi.structure.ForStatement" flags="ng" index="32xATA">
-        <child id="7144803224890013772" name="variableDefinitions" index="32xgzx" />
-        <child id="7144803224890013774" name="body" index="32xgzz" />
-      </concept>
-      <concept id="7144803224889925378" name="alfi.structure.RangeLoopVariableDefinition" flags="ng" index="32xAYJ">
-        <child id="7144803224889925380" name="expression2" index="32xAYD" />
-        <child id="7144803224889925379" name="expression1" index="32xAYI" />
-      </concept>
-      <concept id="7144803224889925462" name="alfi.structure.TypedLoopVariableDefinition" flags="ng" index="32xAZV">
-        <child id="7144803224889925466" name="typeName" index="32xAZR" />
-        <child id="7144803224889925463" name="expression" index="32xAZU" />
-      </concept>
-      <concept id="7144803224891645267" name="alfi.structure.CastExpression" flags="ng" index="32B2RY">
-        <child id="7144803224891645268" name="typeName" index="32B2RT" />
-      </concept>
-      <concept id="7144803224891528095" name="alfi.structure.UnaryExpression" flags="ng" index="32BIcM">
-        <child id="7144803224891528117" name="operand" index="32BIco" />
-      </concept>
       <concept id="7144803224889269844" name="alfi.structure.ReturnStatement" flags="ng" index="32G6VT">
         <child id="8875975376183143672" name="expression" index="2vFQ1F" />
       </concept>
@@ -146,7 +125,6 @@
     </language>
   </registry>
   <node concept="3mGtxK" id="3c6l8$qrnTI">
-    <property role="3GE5qa" value="" />
     <node concept="PCHHj" id="3c6l8$qrnTK" role="3mGtxP">
       <property role="TrG5h" value="Test1" />
       <node concept="PCHzy" id="3c6l8$qrnTN" role="PCHGa">
@@ -154,14 +132,6 @@
           <node concept="1PaTwC" id="6Mo6kYf14bk" role="I4nmN">
             <node concept="3oM_SD" id="6Mo6kYf14bl" role="1PaTwD">
               <property role="3oM_SC" value="Foo" />
-            </node>
-          </node>
-        </node>
-        <node concept="_jtW9" id="7X0jqo9z4s0" role="PCHzz">
-          <node concept="32B2RY" id="7X0jqo9z4rV" role="_jtWe">
-            <node concept="3xHE61" id="7X0jqo9zlgj" role="32B2RT" />
-            <node concept="32T38h" id="7X0jqo9z6vZ" role="32BIco">
-              <property role="32T38g" value="1" />
             </node>
           </node>
         </node>
@@ -188,50 +158,6 @@
           <node concept="3xHE8C" id="4Vswoj0_V4p" role="327w9S">
             <node concept="2RqM1Q" id="4Vswoj0_V4r" role="_vnH8">
               <ref role="2RqM1R" to="gkn4:1KdBIfXrfWN" resolve="Natural" />
-            </node>
-          </node>
-        </node>
-        <node concept="32xATA" id="4Vswoj0x5EV" role="PCHzz">
-          <node concept="32xATy" id="4Vswoj0x5EX" role="32xgzx">
-            <property role="TrG5h" value="a" />
-            <node concept="32T38h" id="4Vswoj0x5Fx" role="32xATX">
-              <property role="32T38g" value="5" />
-            </node>
-          </node>
-          <node concept="32xAZV" id="4Vswoj0x5FD" role="32xgzx">
-            <property role="TrG5h" value="b" />
-            <node concept="3xHE61" id="4Vswoj0x5FL" role="32xAZR" />
-            <node concept="32T38h" id="4Vswoj0x5FX" role="32xAZU">
-              <property role="32T38g" value="6" />
-            </node>
-          </node>
-          <node concept="32xAZV" id="4Vswoj0x5FZ" role="32xgzx">
-            <property role="TrG5h" value="c" />
-            <node concept="3xHE8C" id="4Vswoj0x5Ga" role="32xAZR">
-              <node concept="2RqM1Q" id="4Vswoj0x5Gc" role="_vnH8">
-                <ref role="2RqM1R" to="gkn4:1KdBIfXrfVO" resolve="String" />
-              </node>
-            </node>
-            <node concept="32T38h" id="4Vswoj0x5GX" role="32xAZU">
-              <property role="32T38g" value="7" />
-            </node>
-          </node>
-          <node concept="32xAYJ" id="4Vswoj0x5HE" role="32xgzx">
-            <property role="TrG5h" value="d" />
-            <node concept="32T38h" id="4Vswoj0x5Ia" role="32xAYD">
-              <property role="32T38g" value="9" />
-            </node>
-            <node concept="32T38h" id="4Vswoj0x5I8" role="32xAYI">
-              <property role="32T38g" value="1" />
-            </node>
-          </node>
-          <node concept="PCHzy" id="4Vswoj0x5F1" role="32xgzz">
-            <node concept="PDIRi" id="4Vswoj0x5Ie" role="PCHzz">
-              <node concept="1PaTwC" id="4Vswoj0x5If" role="I4nmN">
-                <node concept="3oM_SD" id="4Vswoj0x5Ig" role="1PaTwD">
-                  <property role="3oM_SC" value="asdasd" />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -367,7 +293,9 @@
           </node>
         </node>
         <node concept="32G6VT" id="4Vswoj0Gm6y" role="PCHzz">
-          <node concept="_jtWu" id="4Vswoj0HEAT" role="2vFQ1F" />
+          <node concept="32T38h" id="7VlknGu3_Ki" role="2vFQ1F">
+            <property role="32T38g" value="1" />
+          </node>
         </node>
       </node>
       <node concept="3xR696" id="4Vswoj0Gm0Z" role="NkNyt">
@@ -422,7 +350,6 @@
     </node>
   </node>
   <node concept="3mGtxK" id="5k4dFFL$vJA">
-    <property role="3GE5qa" value="" />
     <node concept="2qCqA3" id="5k4dFFL$w79" role="3mGtxP">
       <property role="TrG5h" value="Test2" />
       <node concept="PCHHj" id="5k4dFFL$xdJ" role="PCHHv">
@@ -431,18 +358,6 @@
       <node concept="PCHHj" id="7X0jqo9zlpQ" role="PCHHv">
         <property role="TrG5h" value="Test2b" />
         <node concept="PCHzy" id="7X0jqo9zlzn" role="PCHGa">
-          <node concept="_jtW9" id="7X0jqo9znD0" role="PCHzz">
-            <node concept="32B2RY" id="7X0jqo9znCV" role="_jtWe">
-              <node concept="3xHE8C" id="7X0jqo9znHM" role="32B2RT">
-                <node concept="2RqM1Q" id="7X0jqo9zpMJ" role="_vnH8">
-                  <ref role="2RqM1R" to="gkn4:1KdBIfXrfWq" resolve="Real" />
-                </node>
-              </node>
-              <node concept="32T38h" id="7X0jqo9znRK" role="32BIco">
-                <property role="32T38g" value="1" />
-              </node>
-            </node>
-          </node>
           <node concept="_jtW9" id="4VswoiZsMxP" role="PCHzz">
             <node concept="_uF8j" id="4VswoiZsMxH" role="_jtWe">
               <node concept="_vnHb" id="4VswoiZsMxJ" role="_uF8g">
