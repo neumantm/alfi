@@ -24,6 +24,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/alfi.sandbox2/alfi.sandbox2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/alfi.test/alfi.test.msd" folder="alfi" />
       <modulePath path="$PROJECT_DIR$/solutions/basic.language.toAlfiSandbox/basic.language.toAlfiSandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/cs.sandbox/cs.sandbox.msd" folder="" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">
