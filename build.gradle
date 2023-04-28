@@ -26,9 +26,16 @@ task prepareMps {
     dependsOn 'buildOsSpecificBundle'
 }
 
+task patchBuildXml {
+    String contents = new File( 'build.xml' ).getText( 'UTF-8' )
+    contents = contents.replaceAll( '\\{build.tmp}/deps/CsStdLibrary/CsStdLibrary.zip', '{artifacts.CsStdLibrary}' )
+    contents = contents.replaceAll( '\\{build.tmp}/deps/LangDoc/LangDoc.zip', '{artifacts.LangDoc}' )
+    new File( 'build.xml' ).write( contents, 'UTF-8' )
+}
+
 task mpsBuild {
     group 'mps'
-    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary'
+    dependsOn 'mpsAntGenerate', 'mpsAntBuild', 'packageStandardModelLibrary', 'patchBuildXml'
 }
 mpsAntBuild.dependsOn mpsAntGenerate
 mpsAntGenerate.dependsOn packageStandardModelLibrary
